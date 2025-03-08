@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "title": "AI-Powered Cross Design Generator | Cross Designs",
+    "description": "Create beautiful, meaningful cross designs with our AI generator. Transform your spiritual vision into stunning artwork with customizable styles and elements.",
+    "keywords": "cross designs, AI cross generator, religious art, christian design, sacred art, digital cross"
+  },
+  "user": {
+    "sign_in": "Sign In",
+    "sign_out": "Sign Out",
+    "credits": "Credits",
+    "api_keys": "API Keys",
+    "my_orders": "My Orders"
+  },
+  "sign_modal": {
+    "sign_in_title": "Sign In",
+    "sign_in_description": "Sign in to your account",
+    "sign_up_title": "Sign Up",
+    "sign_up_description": "Create an account",
+    "email_title": "Email",
+    "email_placeholder": "Input your email here",
+    "password_title": "Password",
+    "password_placeholder": "Input your password here",
+    "forgot_password": "Forgot password?",
+    "or": "Or",
+    "continue": "Continue",
+    "no_account": "Don't have an account?",
+    "email_sign_in": "Sign in with Email",
+    "google_sign_in": "Sign in with Google",
+    "github_sign_in": "Sign in with GitHub",
+    "close_title": "Close",
+    "cancel_title": "Cancel"
+  },
+  "my_orders": {
+    "title": "My Orders",
+    "description": "orders paid with ShipAny.",
+    "no_orders": "No orders found",
+    "tip": "",
+    "activate_order": "Activate Order",
+    "actived": "Activated",
+    "join_discord": "Join Discord",
+    "read_docs": "Read Docs",
+    "table": {
+      "order_no": "Order No",
+      "email": "Email",
+      "product_name": "Product Name",
+      "amount": "Amount",
+      "paid_at": "Paid At",
+      "github_username": "GitHub Username",
+      "status": "Status"
+    }
+  },
+  "my_credits": {
+    "title": "My Credits",
+    "left_tip": "left credits: {left_credits}",
+    "no_credits": "No credits records",
+    "recharge": "Recharge",
+    "table": {
+      "trans_no": "Trans No",
+      "trans_type": "Trans Type",
+      "credits": "Credits",
+      "updated_at": "Updated At",
+      "status": "Status"
+    }
+  },
+  "api_keys": {
+    "title": "API Keys",
+    "tip": "Please keep your apikey safe to avoid leaks",
+    "no_api_keys": "No API Keys",
+    "create_api_key": "Create API Key",
+    "table": {
+      "name": "Name",
+      "key": "Key",
+      "created_at": "Created At"
+    },
+    "form": {
+      "name": "Name",
+      "name_placeholder": "API Key Name",
+      "submit": "Submit"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "News, resources, and updates about ShipAny",
+    "read_more_text": "Read More"
+  },
+  "pages": {
+    "img-generate": {
+      "title": "AI Cross Design Generator",
+      "form": {
+        "size": {
+          "placeholder": "Select Size",
+          "options": {
+            "square_hd": "Square HD",
+            "square": "Square",
+            "portrait_4_3": "Portrait 4:3",
+            "portrait_16_9": "Portrait 16:9",
+            "landscape_4_3": "Landscape 4:3",
+            "landscape_16_9": "Landscape 16:9"
+          }
+        },
+        "style": {
+          "placeholder": "Select Style",
+          "options": {
+            "realistic_image": "Realistic",
+            "digital_illustration": "Digital Art",
+            "vector_illustration": "Vector Art",
+            "realistic_image/b_and_w": "Black & White",
+            "realistic_image/hard_flash": "Hard Flash",
+            "realistic_image/hdr": "HDR",
+            "realistic_image/natural_light": "Natural Light",
+            "realistic_image/studio_portrait": "Studio Portrait"
+          }
+        },
+        "text_enabled": {
+          "placeholder": "Include Text",
+          "options": {
+            "yes": "Yes",
+            "no": "No"
+          }
+        },
+        "text": {
+          "placeholder": "Enter text (max 10 characters)"
+        },
+        "custom_style": {
+          "placeholder": "Describe additional style details..."
+        },
+        "text_position": {
+          "placeholder": "Text Position",
+          "options": {
+            "behind": "Behind the Cross",
+            "inside": "Inside the Cross"
+          }
+        },
+        "generate": "Generate Cross"
+      },
+      "preview": {
+        "loading": "Generating cross design...",
+        "empty": {
+          "title": "Generated cross design will be displayed here",
+          "description": "Please fill in the options on the left and click generate"
+        }
+      },
+      "toast": {
+        "validation": "Please fill in required fields",
+        "success": "Generated successfully",
+        "error": "Generation failed, please try again",
+        "download_error": "Download failed"
+      },
+      "error": {
+        "credits_not_enough": "Insufficient credits, please recharge and try again",
+        "generation_failed": "Generation failed, please try again"
+      }
+    }
+  }
+}

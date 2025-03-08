@@ -1,0 +1,660 @@
+{
+  "template": "shipany-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "Cross Designs",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Cross Designs"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "功能特点",
+          "url": "/#feature",
+          "icon": "HiOutlineSparkles"
+        },
+        {
+          "title": "定价",
+          "url": "/#pricing",
+          "icon": "MdPayment"
+        },
+        {
+          "title": "作品展示",
+          "children": [
+            {
+              "title": "经典系列",
+              "description": "传统十字架设计",
+              "icon": "MdOutlineWallpaper",
+              "url": "https://crossdesigns.net/gallery/traditional",
+              "target": "_blank"
+            },
+            {
+              "title": "现代系列",
+              "description": "当代十字架艺术",
+              "icon": "RiRedPacketLine",
+              "url": "https://crossdesigns.net/gallery/modern",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "创建十字架",
+        "url": "https://crossdesigns.net",
+        "target": "_blank",
+        "variant": "link",
+        "icon": "RiArrowRightUpLine"
+      }
+    ],
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "将您的创意转化为神圣的十字架设计",
+    "highlight_text": "Cross Designs",
+    "description": "Cross Designs 是您的AI助手，可以将创意转变成精美的十字架艺术作品。<br/>设计、定制并分享您的灵性表达。",
+    "announcement": {
+      "label": "新功能",
+      "title": "🎉 AI十字架生成器正式发布",
+      "url": "/#pricing"
+    },
+    "tip": "🎁 发布特惠：早鸟用户五折优惠",
+    "buttons": [
+      {
+        "title": "开始创作",
+        "icon": "RiFlashlightFill",
+        "url": "/#pricing",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
+        "title": "查看作品",
+        "icon": "RiDiscordFill",
+        "url": "/#showcase",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "branding": {
+    "title": "Cross Designs 建立在巨人的肩膀上",
+    "items": [
+      {
+        "title": "Next.js",
+        "image": {
+          "src": "/imgs/logos/nextjs.svg",
+          "alt": "Next.js"
+        }
+      },
+      {
+        "title": "React",
+        "image": {
+          "src": "/imgs/logos/react.svg",
+          "alt": "React"
+        }
+      },
+      {
+        "title": "TailwindCSS",
+        "image": {
+          "src": "/imgs/logos/tailwindcss.svg",
+          "alt": "TailwindCSS"
+        }
+      },
+      {
+        "title": "Shadcn/UI",
+        "image": {
+          "src": "/imgs/logos/shadcn.svg",
+          "alt": "Shadcn/UI"
+        }
+      },
+      {
+        "title": "Vercel",
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "Vercel"
+        }
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "您的个人十字架设计助手",
+    "label": "关于我们",
+    "description": "Cross Designs 使用先进的AI技术，将您的创意转化为精美的十字架艺术作品。",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "items": [
+      {
+        "title": "AI驱动设计",
+        "description": "使用智能AI生成器创建精美的十字架设计。",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "风格管理",
+        "description": "按风格、主题或场合整理您的设计作品。",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "即时分享",
+        "description": "在各平台上即时分享您的十字架设计。",
+        "icon": "RiCloudyFill"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "为什么选择 Cross Designs",
+    "label": "优势",
+    "description": "体验AI技术与灵性艺术的完美结合，为创作者打造的专业功能。",
+    "items": [
+      {
+        "title": "智能食谱分析",
+        "description": "我们的AI技术能够理解食材、烹饪方法和摆盘风格，即时创建精美的视觉效果。",
+        "icon": "RiNextjsFill",
+        "image": {
+          "src": "/imgs/features/2.png"
+        }
+      },
+      {
+        "title": "精美模板",
+        "description": "从我们的专业设计模板库中选择，以不同风格展示您的食谱。",
+        "icon": "RiClapperboardAiLine",
+        "image": {
+          "src": "/imgs/features/3.png"
+        }
+      },
+      {
+        "title": "美食社区",
+        "description": "加入我们充满活力的美食爱好者社区，分享食谱、获取灵感、交流烹饪技巧。",
+        "icon": "RiCodeFill",
+        "image": {
+          "src": "/imgs/features/4.png"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "如何使用 Cross Designs 创作",
+    "description": "通过四个简单步骤，将您的食谱转化为视觉杰作：",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "输入食谱",
+        "description": "只需输入或粘贴您的食谱文本，包括食材和烹饪步骤。",
+        "image": {
+          "src": "/imgs/features/5.png"
+        }
+      },
+      {
+        "title": "选择风格",
+        "description": "从我们的精美模板集中选择，匹配您食谱的氛围和风格。",
+        "image": {
+          "src": "/imgs/features/6.png"
+        }
+      },
+      {
+        "title": "AI可视化",
+        "description": "让我们的AI将您的食谱转化为专业级的美食摄影作品。",
+        "image": {
+          "src": "/imgs/features/7.png"
+        }
+      },
+      {
+        "title": "分享与启发",
+        "description": "与亲朋好友或社交媒体粉丝分享您的精美食谱展示。",
+        "image": {
+          "src": "/imgs/features/8.png"
+        }
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Cross Designs 的独特功能",
+    "description": "创建和分享精美食谱所需的一切功能。",
+    "items": [
+      {
+        "title": "AI图像生成",
+        "description": "将文字食谱即时转化为专业级美食摄影作品。",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "食谱分类",
+        "description": "按早餐、午餐、晚餐和小食分类，方便查找。",
+        "icon": "RiKey2Fill"
+      },
+      {
+        "title": "自定义样式",
+        "description": "使用各种主题和布局个性化您的食谱展示。",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "便捷分享",
+        "description": "在各社交媒体平台上即时分享您的精美食谱。",
+        "icon": "RiCloudy2Fill"
+      },
+      {
+        "title": "食谱合集",
+        "description": "为不同场合创建和管理多个食谱合集。",
+        "icon": "RiBarChart2Line"
+      },
+      {
+        "title": "智能搜索",
+        "description": "通过食材、菜系或餐类快速找到食谱。",
+        "icon": "RiRobot2Line"
+      }
+    ]
+  },
+  "showcase": {
+    "name": "showcase",
+    "title": "十字架展示",
+    "description": "探索我们社区创作的精美十字架设计作品。",
+    "items": [
+      {
+        "title": "传统十字架",
+        "description": "经典神圣设计",
+        "url": "https://crossdesigns.net/gallery/traditional",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/7.png"
+        }
+      },
+      {
+        "title": "现代十字架",
+        "description": "当代艺术诠释",
+        "url": "https://crossdesigns.net/gallery/modern",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/5.png"
+        }
+      },
+      {
+        "title": "凯尔特十字架",
+        "description": "凯尔特风格灵感",
+        "url": "https://crossdesigns.net/gallery/celtic",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/1.png"
+        }
+      },
+      {
+        "title": "东正教十字架",
+        "description": "东正教传统",
+        "url": "https://crossdesigns.net/gallery/orthodox",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/2.png"
+        }
+      },
+      {
+        "title": "极简十字架",
+        "description": "简约优雅",
+        "url": "https://crossdesigns.net/gallery/minimalist",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/3.png"
+        }
+      },
+      {
+        "title": "装饰十字架",
+        "description": "华丽设计",
+        "url": "https://crossdesigns.net/gallery/decorative",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/9.png"
+        }
+      }
+    ]
+  },
+  "stats": {
+    "name": "stats",
+    "label": "统计数据",
+    "title": "Cross Designs 数据一览",
+    "description": "加入数千名创作精美十字架的设计师。",
+    "icon": "FaRegHeart",
+    "items": [
+      {
+        "title": "信赖",
+        "label": "10K+",
+        "description": "创作者"
+      },
+      {
+        "title": "已创建",
+        "label": "50K+",
+        "description": "十字架设计"
+      },
+      {
+        "title": "生成用时",
+        "label": "30",
+        "description": "秒"
+      }
+    ]
+  },
+  "pricing": {
+    "name": "pricing",
+    "label": "定价",
+    "title": "选择您的完美方案",
+    "description": "灵活的定价选项，将您的创意转化为精美的十字架设计。",
+    "items": [
+      {
+        "title": "入门版",
+        "description": "适合个人使用",
+        "features_title": "包含",
+        "features": [
+          "10次AI十字架设计",
+          "基础设计工具",
+          "标准分享选项",
+          "邮件支持",
+          "基础模板"
+        ],
+        "interval": "one-time",
+        "amount": 0,
+        "cn_amount": 0,
+        "currency": "USD",
+        "price": "$0",
+        "original_price": "$9",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "无需付费",
+        "button": {
+          "title": "开始使用",
+          "url": "/img-generate",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "starter",
+        "product_name": "Cross Designs 入门版",
+        "credits": 5,
+        "valid_months": 1
+      },
+      {
+        "title": "专业版",
+        "description": "适合艺术家和设计师",
+        "label": "最受欢迎",
+        "features_title": "包含入门版所有功能，另加",
+        "features": [
+          "无限AI十字架设计",
+          "高级设计工具",
+          "自定义品牌选项",
+          "优先支持",
+          "高级模板",
+          "数据分析与洞察"
+        ],
+        "interval": "one-time",
+        "amount": 900,
+        "cn_amount": 900,
+        "currency": "USD",
+        "price": "$9",
+        "original_price": "$99",
+        "unit": "USD",
+        "is_featured": true,
+        "tip": "一次付费",
+        "button": {
+          "title": "立即购买",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "professional",
+        "product_name": "Cross Designs 专业版",
+        "credits": 10,
+        "valid_months": 1
+      },
+      {
+        "title": "企业版",
+        "description": "适合宗教组织和大型团体",
+        "features_title": "包含专业版所有功能，另加",
+        "features": [
+          "自定义AI模型训练",
+          "批量设计处理",
+          "API访问",
+          "专属支持",
+          "白标解决方案",
+          "高级分析"
+        ],
+        "interval": "one-time",
+        "amount": 9900,
+        "cn_amount": 9900,
+        "currency": "USD",
+        "price": "$99",
+        "original_price": "$199",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "一次付费",
+        "button": {
+          "title": "获取 Cross Designs",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium",
+        "product_name": "Cross Designs 企业版",
+        "credits": 100,
+        "valid_months": 12
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "用户评价",
+    "title": "用户如何评价 Cross Designs",
+    "description": "听听创作者们使用 Cross Designs 设计十字架的体验。",
+    "icon": "GoThumbsup",
+    "items": [
+      {
+        "title": "陈莎拉",
+        "label": "宗教艺术家",
+        "description": "Cross Designs 彻底改变了我的创作方式！AI生成的设计完美捕捉了神圣的精髓。我的客户对成品赞不绝口。",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "金迈克",
+        "label": "教堂负责人",
+        "description": "我们使用 Cross Designs 创作教堂的艺术品。AI对宗教符号的理解令人惊叹，为我们的社区创造了富有意义的设计。",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "艾玛·汤普森",
+        "label": "设计师",
+        "description": "作为设计师，Cross Designs 帮助我创作独特、富有灵性的艺术品。AI可视化让每个十字架设计都独具特色！",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "常见问题",
+    "title": "常见问题解答",
+    "description": "关于 Cross Designs 的问题？在这里找到答案。",
+    "items": [
+      {
+        "title": "Cross Designs 的 AI 生成是如何工作的？",
+        "description": "只需描述您想要的十字架风格和元素，我们的AI技术就会根据您的输入生成精美的、定制化的十字架设计。"
+      },
+      {
+        "title": "可以创作哪些风格的十字架？",
+        "description": "您可以创作多种风格，包括传统、现代、凯尔特、东正教、极简和装饰性十字架。我们的AI理解不同文化和宗教的设计元素。"
+      },
+      {
+        "title": "可以下载哪些文件格式？",
+        "description": "Cross Designs 提供高分辨率的PNG、JPG和SVG格式，适用于数字使用和实体打印。"
+      },
+      {
+        "title": "能自定义颜色和图案吗？",
+        "description": "当然可以！您可以完全自定义颜色、图案、装饰元素和比例，创造完美的十字架设计。"
+      },
+      {
+        "title": "可以生成多少设计？",
+        "description": "生成数量取决于您的订阅方案。免费用户可获得10次设计机会，付费方案则提供更多或无限次生成。"
+      },
+      {
+        "title": "生成后还能修改设计吗？",
+        "description": "可以！您可以通过调整颜色、添加元素或通过AI系统请求变体来完善任何生成的设计。"
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "今天就开始创建精美的十字架设计",
+    "description": "用AI驱动的创意将您的灵感转化为视觉艺术。",
+    "buttons": [
+      {
+        "title": "开始创作",
+        "url": "https://crossdesigns.net",
+        "target": "_blank",
+        "icon": "GoArrowUpRight"
+      },
+      {
+        "title": "浏览作品",
+        "url": "https://crossdesigns.net/gallery",
+        "target": "_blank",
+        "variant": "outline"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "Cross Designs",
+      "description": "使用AI驱动的技术将您的创意转化为精美的十字架设计。创建、定制并分享您的灵性艺术作品。",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Cross Designs"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2024 • Cross Designs 保留所有权利。",
+    "nav": {
+      "items": [
+        {
+          "title": "关于",
+          "children": [
+            {
+              "title": "功能特点",
+              "url": "/#feature",
+              "target": "_self"
+            },
+            {
+              "title": "作品展示",
+              "url": "/#showcase",
+              "target": "_self"
+            },
+            {
+              "title": "定价",
+              "url": "/#pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "资源",
+          "children": [
+            {
+              "title": "设计技巧",
+              "url": "https://crossdesigns.net/tips",
+              "target": "_blank"
+            },
+            {
+              "title": "模板",
+              "url": "https://crossdesigns.net/templates",
+              "target": "_blank"
+            },
+            {
+              "title": "博客",
+              "url": "https://crossdesigns.net/blog",
+              "target": "_blank"
+            }
+          ]
+        },
+        {
+          "title": "作品集",
+          "children": [
+            {
+              "title": "传统系列",
+              "url": "https://crossdesigns.net/collections/traditional",
+              "target": "_blank"
+            },
+            {
+              "title": "现代系列",
+              "url": "https://crossdesigns.net/collections/modern",
+              "target": "_blank"
+            },
+            {
+              "title": "定制系列",
+              "url": "https://crossdesigns.net/collections/custom",
+              "target": "_blank"
+            }
+          ]
+        },
+        {
+          "title": "友情链接",
+          "children": [
+            {
+              "title": "AI Logo Maker",
+              "url": "https://www.logoai.com/",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/crossdesigns",
+          "target": "_blank"
+        },
+        {
+          "title": "Instagram",
+          "icon": "RiGithubFill",
+          "url": "https://instagram.com/crossdesigns",
+          "target": "_blank"
+        },
+        {
+          "title": "Pinterest",
+          "icon": "RiDiscordFill",
+          "url": "https://pinterest.com/crossdesigns",
+          "target": "_blank"
+        },
+        {
+          "title": "邮箱",
+          "icon": "RiMailLine",
+          "url": "mailto:support@crossdesigns.net",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "隐私政策",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "服务条款",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,663 @@
+{
+  "template": "shipany-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "Cross Designs",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Cross Designs"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Features",
+          "url": "/#feature",
+          "icon": "HiOutlineSparkles"
+        },
+        {
+          "title": "Pricing",
+          "url": "/#pricing",
+          "icon": "MdPayment"
+        },
+        {
+          "title": "Gallery",
+          "url": "/#showcase",
+          "icon": "BiCube",
+          "children": [
+            {
+              "title": "Classic Collection",
+              "description": "Traditional Cross Designs",
+              "icon": "RiRedPacketLine",
+              "url": "/#showcase",
+              "target": "_blank"
+            },
+            {
+              "title": "Modern Collection",
+              "description": "Contemporary Cross Artworks",
+              "icon": "RiRedPacketLine",
+              "url": "/#showcase",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "Create Cross",
+        "url": "https://crossdesigns.net",
+        "target": "_blank",
+        "variant": "link",
+        "icon": "RiArrowRightUpLine"
+      }
+    ],
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "Transform Your Vision into Sacred Cross Designs",
+    "highlight_text": "Cross Designs",
+    "description": "Cross Designs is your AI-powered companion for creating meaningful and beautiful cross artwork.<br/>Design, customize, and share your spiritual expressions with ease.",
+    "announcement": {
+      "label": "New",
+      "title": "🎉 AI Cross Generator Launch",
+      "url": "/#pricing"
+    },
+    "tip": "🎁 Launch Special: 50% off for early creators",
+    "buttons": [
+      {
+        "title": "Start Creating",
+        "icon": "RiFlashlightFill",
+        "url": "/img-generate",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
+        "title": "View Gallery",
+        "icon": "RiDiscordFill",
+        "url": "/#showcase",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "branding": {
+    "title": "ShipAny is built on the shoulders of giants",
+    "items": [
+      {
+        "title": "Next.js",
+        "image": {
+          "src": "/imgs/logos/nextjs.svg",
+          "alt": "Next.js"
+        }
+      },
+      {
+        "title": "React",
+        "image": {
+          "src": "/imgs/logos/react.svg",
+          "alt": "React"
+        }
+      },
+      {
+        "title": "TailwindCSS",
+        "image": {
+          "src": "/imgs/logos/tailwindcss.svg",
+          "alt": "TailwindCSS"
+        }
+      },
+      {
+        "title": "Shadcn/UI",
+        "image": {
+          "src": "/imgs/logos/shadcn.svg",
+          "alt": "Shadcn/UI"
+        }
+      },
+      {
+        "title": "Vercel",
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "Vercel"
+        }
+      }
+    ]
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Your Personal Cross Design Creator",
+    "label": "About",
+    "description": "Cross Designs transforms your ideas into beautiful, meaningful cross artwork using advanced AI technology.",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "items": [
+      {
+        "title": "AI-Powered Design",
+        "description": "Create stunning cross designs with our intelligent AI generator.",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "Style Organization",
+        "description": "Organize your designs by style, theme, or occasion.",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "Easy Sharing",
+        "description": "Share your cross designs across platforms instantly.",
+        "icon": "RiCloudyFill"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Why Choose Cross Designs",
+    "label": "Benefits",
+    "description": "Experience the perfect blend of AI technology and spiritual artistry with features designed for meaningful expression.",
+    "items": [
+      {
+        "title": "Smart Design Analysis",
+        "description": "Our AI understands cross symbolism and design elements to create meaningful artwork.",
+        "icon": "RiNextjsFill",
+        "image": {
+          "src": "/imgs/features/2.png"
+        }
+      },
+      {
+        "title": "Diverse Templates",
+        "description": "Choose from our collection of cross styles from traditional to contemporary.",
+        "icon": "RiClapperboardAiLine",
+        "image": {
+          "src": "/imgs/features/3.png"
+        }
+      },
+      {
+        "title": "Design Community",
+        "description": "Join our community to share designs and get inspiration.",
+        "icon": "RiCodeFill",
+        "image": {
+          "src": "/imgs/features/4.png"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "How to Create with Cross Designs",
+    "description": "Create your perfect cross design in four easy steps:",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "Choose Your Style",
+        "description": "Select your preferred cross style and design elements.",
+        "image": {
+          "src": "/imgs/features/5.png"
+        }
+      },
+      {
+        "title": "Customize Details",
+        "description": "Adjust colors, patterns, and decorative elements to match your vision.",
+        "image": {
+          "src": "/imgs/features/6.png"
+        }
+      },
+      {
+        "title": "AI Generation",
+        "description": "Let our AI transform your choices into a beautiful cross design.",
+        "image": {
+          "src": "/imgs/features/7.png"
+        }
+      },
+      {
+        "title": "Share & Download",
+        "description": "Download your design or share it directly with others.",
+        "image": {
+          "src": "/imgs/features/8.png"
+        }
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Features That Make Cross Designs Special",
+    "description": "Everything you need to create meaningful cross artwork.",
+    "items": [
+      {
+        "title": "AI Design Generation",
+        "description": "Create unique cross designs instantly with AI technology.",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "Style Categories",
+        "description": "Browse designs by traditional, modern, or custom styles.",
+        "icon": "RiKey2Fill"
+      },
+      {
+        "title": "Custom Elements",
+        "description": "Add personal touches with decorative elements and patterns.",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "Easy Export",
+        "description": "Download designs in various formats for any use.",
+        "icon": "RiCloudy2Fill"
+      },
+      {
+        "title": "Design Collections",
+        "description": "Save and organize your favorite cross designs.",
+        "icon": "RiBarChart2Line"
+      },
+      {
+        "title": "Smart Search",
+        "description": "Find designs by style, elements, or theme.",
+        "icon": "RiRobot2Line"
+      }
+    ]
+  },
+  "showcase": {
+    "name": "showcase",
+    "title": "Cross Gallery",
+    "description": "Explore beautiful cross designs created by our community.",
+    "items": [
+      {
+        "title": "Traditional Crosses",
+        "description": "Classic Sacred Designs",
+        "url": "https://crossdesigns.net/gallery/traditional",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/7.png"
+        }
+      },
+      {
+        "title": "Modern Crosses",
+        "description": "Contemporary Interpretations",
+        "url": "https://crossdesigns.net/gallery/modern",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/5.png"
+        }
+      },
+      {
+        "title": "Celtic Crosses",
+        "description": "Celtic Inspirations",
+        "url": "https://crossdesigns.net/gallery/celtic",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/1.png"
+        }
+      },
+      {
+        "title": "Orthodox Crosses",
+        "description": "Orthodox Traditions",
+        "url": "https://crossdesigns.net/gallery/orthodox",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/2.png"
+        }
+      },
+      {
+        "title": "Minimalist Crosses",
+        "description": "Simple Elegance",
+        "url": "https://crossdesigns.net/gallery/minimalist",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/3.png"
+        }
+      },
+      {
+        "title": "Decorative Crosses",
+        "description": "Ornate Designs",
+        "url": "https://crossdesigns.net/gallery/decorative",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/9.png"
+        }
+      }
+    ]
+  },
+  "stats": {
+    "name": "stats",
+    "label": "Stats",
+    "title": "Cross Designs by Numbers",
+    "description": "Join thousands of creators designing meaningful crosses.",
+    "icon": "FaRegHeart",
+    "items": [
+      {
+        "title": "Trusted by",
+        "label": "10K+",
+        "description": "Creators"
+      },
+      {
+        "title": "Created",
+        "label": "50K+",
+        "description": "Cross Designs"
+      },
+      {
+        "title": "Generate in",
+        "label": "30",
+        "description": "Seconds"
+      }
+    ]
+  },
+  "pricing": {
+    "name": "pricing",
+    "label": "Pricing",
+    "title": "Choose Your Perfect Plan",
+    "description": "Create beautiful cross designs with our flexible pricing options.",
+    "groups": [],
+    "items": [
+      {
+        "title": "Starter",
+        "description": "Perfect for personal use",
+        "features_title": "Includes",
+        "features": [
+          "10 AI cross designs",
+          "Basic design tools",
+          "Standard sharing options",
+          "Email support",
+          "Basic templates"
+        ],
+        "interval": "one-time",
+        "amount": 0,
+        "cn_amount": 0,
+        "currency": "USD",
+        "price": "$0",
+        "original_price": "$9",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "No pay.",
+        "button": {
+          "title": "Get Cross Designs",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "starter",
+        "product_name": "Cross Designs Starter",
+        "credits": 5,
+        "valid_months": 1
+      },
+      {
+        "title": "Professional",
+        "description": "Ideal for artists and designers",
+        "label": "Popular",
+        "features_title": "Everything in Starter, plus",
+        "features": [
+          "Unlimited AI cross designs",
+          "Advanced design tools",
+          "Custom branding options",
+          "Priority support",
+          "Premium templates",
+          "Analytics and insights"
+        ],
+        "interval": "one-time",
+        "amount": 900,
+        "cn_amount": 900,
+        "currency": "USD",
+        "price": "$9",
+        "original_price": "$99",
+        "unit": "USD",
+        "is_featured": true,
+        "tip": "Pay once.",
+        "button": {
+          "title": "Get Cross Designs",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "professional",
+        "product_name": "Cross Designs Professional",
+        "credits": 10,
+        "valid_months": 1
+      },
+      {
+        "title": "Enterprise",
+        "description": "For religious organizations and large groups",
+        "features_title": "Everything in Professional, plus",
+        "features": [
+          "Custom AI model training",
+          "Bulk design processing",
+          "API access",
+          "Dedicated support",
+          "White-label solution",
+          "Advanced analytics"
+        ],
+        "interval": "one-time",
+        "amount": 9900,
+        "cn_amount": 9900,
+        "currency": "USD",
+        "price": "$99",
+        "original_price": "$199",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "Pay once.",
+        "button": {
+          "title": "Get Cross Designs",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "enterprise",
+        "product_name": "Cross Designs Enterprise",
+        "credits": 100,
+        "valid_months": 12
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "Testimonial",
+    "title": "What Users Say About Cross Designs",
+    "description": "Hear from creators who transformed their visions with Cross Designs.",
+    "icon": "GoThumbsup",
+    "items": [
+      {
+        "title": "Sarah Chen",
+        "label": "Religious Artist",
+        "description": "Cross Designs has revolutionized my artwork! The AI-generated designs capture the sacred essence perfectly. My clients are amazed by the results.",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "Michael Kim",
+        "label": "Church Leader",
+        "description": "We use Cross Designs for our church materials. The AI understands religious symbolism beautifully, creating meaningful designs for our community.",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "Emma Thompson",
+        "label": "Designer",
+        "description": "As a designer, Cross Designs helps me create unique, spiritually meaningful artwork. The AI visualization makes every cross design truly special!",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Frequently Asked Questions",
+    "description": "Have questions about Cross Designs? Find answers here.",
+    "items": [
+      {
+        "title": "How does Cross Designs' AI generation work?",
+        "description": "Simply describe your desired cross style and elements, and our AI technology will generate a beautiful, customized cross design based on your input."
+      },
+      {
+        "title": "What styles of crosses can I create?",
+        "description": "You can create various styles including traditional, modern, Celtic, Orthodox, minimalist, and decorative crosses. Our AI understands different cultural and religious design elements."
+      },
+      {
+        "title": "What file formats are available for download?",
+        "description": "Cross Designs provides high-resolution PNG, JPG, and SVG formats, suitable for both digital use and physical printing."
+      },
+      {
+        "title": "Can I customize the colors and patterns?",
+        "description": "Yes! You can fully customize colors, patterns, decorative elements, and proportions to create your perfect cross design."
+      },
+      {
+        "title": "How many designs can I generate?",
+        "description": "The number of designs depends on your subscription plan. Free users get 10 designs, while paid plans offer more or unlimited generations."
+      },
+      {
+        "title": "Can I modify designs after generation?",
+        "description": "Yes! You can refine any generated design by adjusting colors, adding elements, or requesting variations through our AI system."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Start Creating Beautiful Cross Designs Today",
+    "description": "Transform your spiritual vision into stunning cross designs with AI-powered creativity.",
+    "buttons": [
+      {
+        "title": "Start Creating",
+        "url": "https://crossdesigns.net",
+        "target": "_blank",
+        "icon": "GoArrowUpRight"
+      },
+      {
+        "title": "View Gallery",
+        "url": "/#showcase",
+        "target": "_blank",
+        "variant": "outline"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "Cross Designs",
+      "description": "Transform your visions into stunning cross designs with AI-powered technology. Create, customize, and share your spiritual masterpieces.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Cross Designs"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2024 • Cross Designs All rights reserved.",
+    "nav": {
+      "items": [
+        {
+          "title": "About",
+          "children": [
+            {
+              "title": "Features",
+              "url": "/#feature",
+              "target": "_self"
+            },
+            {
+              "title": "Gallery",
+              "url": "/#showcase",
+              "target": "_self"
+            },
+            {
+              "title": "Pricing",
+              "url": "/#pricing",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Resources",
+          "children": [
+            {
+              "title": "Design Tips",
+              "url": "https://crossdesigns.net/tips",
+              "target": "_blank"
+            },
+            {
+              "title": "Templates",
+              "url": "https://crossdesigns.net/templates",
+              "target": "_blank"
+            },
+            {
+              "title": "Blog",
+              "url": "https://crossdesigns.net/blog",
+              "target": "_blank"
+            }
+          ]
+        },
+        {
+          "title": "Collections",
+          "children": [
+            {
+              "title": "Traditional",
+              "url": "https://crossdesigns.net/collections/traditional",
+              "target": "_blank"
+            },
+            {
+              "title": "Modern",
+              "url": "https://crossdesigns.net/collections/modern",
+              "target": "_blank"
+            },
+            {
+              "title": "Custom",
+              "url": "https://crossdesigns.net/collections/custom",
+              "target": "_blank"
+            }
+          ]
+        },
+        {
+          "title": "Friends",
+          "children": [
+            {
+              "title": "AI Logo Maker",
+              "url": "https://www.logoai.com/",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/crossdesigns",
+          "target": "_blank"
+        },
+        {
+          "title": "Instagram",
+          "icon": "RiGithubFill",
+          "url": "https://instagram.com/crossdesigns",
+          "target": "_blank"
+        },
+        {
+          "title": "Pinterest",
+          "icon": "RiDiscordFill",
+          "url": "https://pinterest.com/crossdesigns",
+          "target": "_blank"
+        },
+        {
+          "title": "Email",
+          "icon": "RiMailLine",
+          "url": "mailto:support@crossdesigns.net",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Privacy Policy",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Terms of Service",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@baseUrl = http://localhost:3000
+@apiKey = sk-xxx
+
+### ping api
+POST {{baseUrl}}/api/ping
+Content-Type: application/json
+Authorization: Bearer {{apiKey}}
+
+{
+  "message": "hello"
+}
+
+### gen image
+POST {{baseUrl}}/api/demo/gen-image
+Content-Type: application/json
+Authorization: Bearer {{apiKey}}
+
+{
+  "prompt": "a beautiful girl running with 2 cats",
+  "provider": "replicate",
+  "model": "black-forest-labs/flux-schnell"
+}

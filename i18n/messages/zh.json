@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "title": "AI 十字架设计生成器 | Cross Designs",
+    "description": "使用我们的 AI 生成器创建精美、有意义的十字架设计。将您的灵性愿景转化为令人惊叹的艺术作品，支持自定义风格和元素。",
+    "keywords": "十字架设计, AI生成器, 宗教艺术, 基督教设计, 圣艺术, 数字十字架"
+  },
+  "user": {
+    "sign_in": "登录",
+    "sign_out": "退出登录",
+    "credits": "额度",
+    "api_keys": "API 密钥",
+    "my_orders": "我的订单"
+  },
+  "sign_modal": {
+    "sign_in_title": "登录",
+    "sign_in_description": "登录您的账户",
+    "sign_up_title": "注册",
+    "sign_up_description": "创建新账户",
+    "email_title": "邮箱",
+    "email_placeholder": "请输入您的邮箱",
+    "password_title": "密码",
+    "password_placeholder": "请输入您的密码",
+    "forgot_password": "忘记密码？",
+    "or": "或",
+    "continue": "继续",
+    "no_account": "还没有账户？",
+    "email_sign_in": "使用邮箱登录",
+    "google_sign_in": "使用 Google 登录",
+    "github_sign_in": "使用 GitHub 登录",
+    "close_title": "关闭",
+    "cancel_title": "取消"
+  },
+  "my_orders": {
+    "title": "我的订单",
+    "description": "在 ShipAny 上购买的订单。",
+    "no_orders": "未找到订单",
+    "tip": "",
+    "activate_order": "激活订单",
+    "actived": "已激活",
+    "join_discord": "加入 Discord",
+    "read_docs": "阅读文档",
+    "table": {
+      "order_no": "订单号",
+      "email": "邮箱",
+      "product_name": "产品名称",
+      "amount": "金额",
+      "paid_at": "支付时间",
+      "github_username": "GitHub 用户名",
+      "status": "状态"
+    }
+  },
+  "my_credits": {
+    "title": "我的积分",
+    "left_tip": "剩余积分: {left_credits}",
+    "no_credits": "没有积分记录",
+    "recharge": "充值",
+    "table": {
+      "trans_no": "交易号",
+      "trans_type": "交易类型",
+      "credits": "积分",
+      "updated_at": "更新时间",
+      "status": "状态"
+    }
+  },
+  "api_keys": {
+    "title": "API 密钥",
+    "tip": "请妥善保管您的 API 密钥，避免泄露",
+    "no_api_keys": "没有 API 密钥",
+    "create_api_key": "创建 API 密钥",
+    "table": {
+      "name": "名称",
+      "key": "密钥",
+      "created_at": "创建时间"
+    },
+    "form": {
+      "name": "名称",
+      "name_placeholder": "API 密钥名称",
+      "submit": "提交"
+    }
+  },
+  "blog": {
+    "title": "博客",
+    "description": "关于 ShipAny 的新闻、资源和更新",
+    "read_more_text": "阅读更多"
+  },
+  "pages": {
+    "img-generate": {
+      "title": "AI 十字架设计生成器",
+      "form": {
+        "size": {
+          "placeholder": "选择尺寸",
+          "options": {
+            "square_hd": "正方形(高清)",
+            "square": "正方形",
+            "portrait_4_3": "竖版 4:3",
+            "portrait_16_9": "竖版 16:9",
+            "landscape_4_3": "横版 4:3",
+            "landscape_16_9": "横版 16:9"
+          }
+        },
+        "style": {
+          "placeholder": "选择风格",
+          "options": {
+            "realistic_image": "写实风格",
+            "digital_illustration": "数字艺术",
+            "vector_illustration": "矢量艺术",
+            "realistic_image/b_and_w": "黑白",
+            "realistic_image/hard_flash": "硬闪光",
+            "realistic_image/hdr": "HDR",
+            "realistic_image/natural_light": "自然光",
+            "realistic_image/studio_portrait": "工作室"
+          }
+        },
+        "text_enabled": {
+          "placeholder": "是否包含文字",
+          "options": {
+            "yes": "是",
+            "no": "否"
+          }
+        },
+        "text": {
+          "placeholder": "输入文字 (最多10个字符)"
+        },
+        "custom_style": {
+          "placeholder": "描述额外的样式细节..."
+        },
+        "text_position": {
+          "placeholder": "文字位置",
+          "options": {
+            "behind": "十字架背后",
+            "inside": "十字架内部"
+          }
+        },
+        "generate": "生成十字架"
+      },
+      "preview": {
+        "loading": "正在生成十字架设计...",
+        "empty": {
+          "title": "生成的十字架设计将在这里显示",
+          "description": "请在左侧填写选项并点击生成按钮"
+        }
+      },
+      "toast": {
+        "validation": "请填写必要的字段",
+        "success": "生成成功",
+        "error": "生成失败，请重试",
+        "download_error": "下载失败"
+      }
+    }
+  },
+  "error": {
+    "credits_not_enough": "积分不足，请充值后再试",
+    "generation_failed": "生成失败，请稍后重试"
+  }
+}
