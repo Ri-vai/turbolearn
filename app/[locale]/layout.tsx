@@ -31,7 +31,7 @@ export async function generateMetadata({
     description: t("metadata.description") || "",
     keywords: t("metadata.keywords") || "",
     verification: {
-      google: "y5GsN1og3L40eFBHvegYwX_8_jEma7wFUNVXOiawCOc",
+      google: "BJqrbSliiExGmDU4Z5OMFBl9k7DbZLJ73_Z9YOh9a5w",
     },
   };
 }
