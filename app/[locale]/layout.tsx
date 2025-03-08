@@ -64,7 +64,7 @@ export default async function RootLayout({
         </NextIntlClientProvider>
 
         <Script 
-          data-domain="crossdesigns.net" 
+          data-domain="turbo-learn.com" 
           src="https://application-plausible-f9470a-77-37-67-93.traefik.me/js/script.js"
           strategy="lazyOnload"
         />
