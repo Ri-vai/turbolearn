@@ -3,10 +3,10 @@
   "theme": "light",
   "header": {
     "brand": {
-      "title": "Cross Designs",
+      "title": "TurboLearn",
       "logo": {
         "src": "/logo.png",
-        "alt": "Cross Designs"
+        "alt": "TurboLearn"
       },
       "url": "/"
     },
@@ -28,15 +28,15 @@
           "icon": "BiCube",
           "children": [
             {
-              "title": "Classic Collection",
-              "description": "Traditional Cross Designs",
+              "title": "Note Examples",
+              "description": "AI-Generated Study Notes",
               "icon": "RiRedPacketLine",
               "url": "/#showcase",
               "target": "_blank"
             },
             {
-              "title": "Modern Collection",
-              "description": "Contemporary Cross Artworks",
+              "title": "Diagram Samples",
+              "description": "Relationship & Flow Diagrams",
               "icon": "RiRedPacketLine",
               "url": "/#showcase",
               "target": "_blank"
@@ -47,8 +47,8 @@
     },
     "buttons": [
       {
-        "title": "Create Cross",
-        "url": "https://crossdesigns.net",
+        "title": "Start Learning",
+        "url": "https://turbo-learn.com",
         "target": "_blank",
         "variant": "link",
         "icon": "RiArrowRightUpLine"
@@ -59,25 +59,25 @@
     "show_locale": true
   },
   "hero": {
-    "title": "Transform Your Vision into Sacred Cross Designs",
-    "highlight_text": "Cross Designs",
-    "description": "Cross Designs is your AI-powered companion for creating meaningful and beautiful cross artwork.<br/>Design, customize, and share your spiritual expressions with ease.",
+    "title": "Learn More, Learn Faster",
+    "highlight_text": "TurboLearn",
+    "description": "TurboLearn is your AI-powered learning assistant for creating concise notes and clear diagrams.<br/>Upload materials, generate insights, and boost your learning efficiency instantly.",
     "announcement": {
       "label": "New",
-      "title": "🎉 AI Cross Generator Launch",
+      "title": "🎉 AI Diagram Generator Launch",
       "url": "/#pricing"
     },
     "tip": "🎁 Launch Special: 50% off for early creators",
     "buttons": [
       {
-        "title": "Start Creating",
+        "title": "Generate Notes",
         "icon": "RiFlashlightFill",
         "url": "/img-generate",
         "target": "_self",
         "variant": "default"
       },
       {
-        "title": "View Gallery",
+        "title": "View Examples",
         "icon": "RiDiscordFill",
         "url": "/#showcase",
         "target": "_self",
@@ -88,7 +88,7 @@
     "show_badge": false
   },
   "branding": {
-    "title": "ShipAny is built on the shoulders of giants",
+    "title": "TurboLearn is built on the shoulders of giants",
     "items": [
       {
         "title": "Next.js",
@@ -129,55 +129,55 @@
   },
   "introduce": {
     "name": "introduce",
-    "title": "Your Personal Cross Design Creator",
+    "title": "Your Personal Learning Assistant",
     "label": "About",
-    "description": "Cross Designs transforms your ideas into beautiful, meaningful cross artwork using advanced AI technology.",
+    "description": "TurboLearn transforms complex study materials into clear, concise notes and diagrams using advanced AI technology.",
     "image": {
       "src": "/imgs/features/1.png"
     },
     "items": [
       {
-        "title": "AI-Powered Design",
-        "description": "Create stunning cross designs with our intelligent AI generator.",
+        "title": "AI-Powered Notes",
+        "description": "Generate comprehensive study notes from any learning material.",
         "icon": "RiNextjsFill"
       },
       {
-        "title": "Style Organization",
-        "description": "Organize your designs by style, theme, or occasion.",
+        "title": "Smart Diagrams",
+        "description": "Create relationship and flow diagrams to visualize concepts.",
         "icon": "RiDatabase2Line"
       },
       {
         "title": "Easy Sharing",
-        "description": "Share your cross designs across platforms instantly.",
+        "description": "Share your notes and diagrams across platforms instantly.",
         "icon": "RiCloudyFill"
       }
     ]
   },
   "benefit": {
     "name": "benefit",
-    "title": "Why Choose Cross Designs",
+    "title": "Why Choose TurboLearn",
     "label": "Benefits",
-    "description": "Experience the perfect blend of AI technology and spiritual artistry with features designed for meaningful expression.",
+    "description": "Experience the perfect blend of AI technology and educational expertise with features designed for maximum learning efficiency.",
     "items": [
       {
-        "title": "Smart Design Analysis",
-        "description": "Our AI understands cross symbolism and design elements to create meaningful artwork.",
+        "title": "Smart Content Analysis",
+        "description": "Our AI understands educational content and extracts key concepts automatically.",
         "icon": "RiNextjsFill",
         "image": {
           "src": "/imgs/features/2.png"
         }
       },
       {
-        "title": "Diverse Templates",
-        "description": "Choose from our collection of cross styles from traditional to contemporary.",
+        "title": "Visual Learning",
+        "description": "Convert complex relationships into clear, intuitive diagrams for better retention.",
         "icon": "RiClapperboardAiLine",
         "image": {
           "src": "/imgs/features/3.png"
         }
       },
       {
-        "title": "Design Community",
-        "description": "Join our community to share designs and get inspiration.",
+        "title": "Learning Community",
+        "description": "Join our community to share notes and get study inspiration.",
         "icon": "RiCodeFill",
         "image": {
           "src": "/imgs/features/4.png"
@@ -187,8 +187,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "How to Create with Cross Designs",
-    "description": "Create your perfect cross design in four easy steps:",
+    "title": "How to Learn with TurboLearn",
+    "description": "Enhance your study sessions in four easy steps:",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -196,29 +196,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Choose Your Style",
-        "description": "Select your preferred cross style and design elements.",
+        "title": "Upload Materials",
+        "description": "Upload your textbooks, lecture notes, or study materials.",
         "image": {
           "src": "/imgs/features/5.png"
         }
       },
       {
-        "title": "Customize Details",
-        "description": "Adjust colors, patterns, and decorative elements to match your vision.",
+        "title": "Select Format",
+        "description": "Choose between concise notes, diagrams, or both.",
         "image": {
           "src": "/imgs/features/6.png"
         }
       },
       {
         "title": "AI Generation",
-        "description": "Let our AI transform your choices into a beautiful cross design.",
+        "description": "Let our AI transform your materials into clear learning aids.",
         "image": {
           "src": "/imgs/features/7.png"
         }
       },
       {
-        "title": "Share & Download",
-        "description": "Download your design or share it directly with others.",
+        "title": "Study & Share",
+        "description": "Download your notes or share them directly with classmates.",
         "image": {
           "src": "/imgs/features/8.png"
         }
@@ -227,95 +227,95 @@
   },
   "feature": {
     "name": "feature",
-    "title": "Features That Make Cross Designs Special",
-    "description": "Everything you need to create meaningful cross artwork.",
+    "title": "Features That Make TurboLearn Special",
+    "description": "Everything you need to enhance your learning efficiency.",
     "items": [
       {
-        "title": "AI Design Generation",
-        "description": "Create unique cross designs instantly with AI technology.",
+        "title": "AI Note Generation",
+        "description": "Create concise study notes instantly from any material.",
         "icon": "RiNextjsFill"
       },
       {
-        "title": "Style Categories",
-        "description": "Browse designs by traditional, modern, or custom styles.",
+        "title": "Diagram Creation",
+        "description": "Visualize relationships and processes with auto-generated diagrams.",
         "icon": "RiKey2Fill"
       },
       {
-        "title": "Custom Elements",
-        "description": "Add personal touches with decorative elements and patterns.",
+        "title": "Custom Formatting",
+        "description": "Adjust note style and diagram layout to match your preferences.",
         "icon": "RiDatabase2Line"
       },
       {
-        "title": "Easy Export",
-        "description": "Download designs in various formats for any use.",
+        "title": "Multi-Format Export",
+        "description": "Download notes in various formats for any study situation.",
         "icon": "RiCloudy2Fill"
       },
       {
-        "title": "Design Collections",
-        "description": "Save and organize your favorite cross designs.",
+        "title": "Study Collections",
+        "description": "Save and organize your notes by subject or course.",
         "icon": "RiBarChart2Line"
       },
       {
         "title": "Smart Search",
-        "description": "Find designs by style, elements, or theme.",
+        "description": "Find specific concepts across all your generated materials.",
         "icon": "RiRobot2Line"
       }
     ]
   },
   "showcase": {
     "name": "showcase",
-    "title": "Cross Gallery",
-    "description": "Explore beautiful cross designs created by our community.",
+    "title": "Learning Gallery",
+    "description": "Explore example notes and diagrams created with TurboLearn.",
     "items": [
       {
-        "title": "Traditional Crosses",
-        "description": "Classic Sacred Designs",
-        "url": "https://crossdesigns.net/gallery/traditional",
+        "title": "Biology Notes",
+        "description": "Cell Structure & Function",
+        "url": "https://turbo-learn.com/gallery/biology",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/7.png"
         }
       },
       {
-        "title": "Modern Crosses",
-        "description": "Contemporary Interpretations",
-        "url": "https://crossdesigns.net/gallery/modern",
+        "title": "Physics Diagrams",
+        "description": "Force & Motion Concepts",
+        "url": "https://turbo-learn.com/gallery/physics",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/5.png"
         }
       },
       {
-        "title": "Celtic Crosses",
-        "description": "Celtic Inspirations",
-        "url": "https://crossdesigns.net/gallery/celtic",
+        "title": "History Timeline",
+        "description": "World War II Events",
+        "url": "https://turbo-learn.com/gallery/history",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/1.png"
         }
       },
       {
-        "title": "Orthodox Crosses",
-        "description": "Orthodox Traditions",
-        "url": "https://crossdesigns.net/gallery/orthodox",
+        "title": "Math Formulas",
+        "description": "Calculus Essentials",
+        "url": "https://turbo-learn.com/gallery/math",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/2.png"
         }
       },
       {
-        "title": "Minimalist Crosses",
-        "description": "Simple Elegance",
-        "url": "https://crossdesigns.net/gallery/minimalist",
+        "title": "Computer Science",
+        "description": "Algorithm Flowcharts",
+        "url": "https://turbo-learn.com/gallery/cs",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/3.png"
         }
       },
       {
-        "title": "Decorative Crosses",
-        "description": "Ornate Designs",
-        "url": "https://crossdesigns.net/gallery/decorative",
+        "title": "Chemistry Notes",
+        "description": "Organic Reactions",
+        "url": "https://turbo-learn.com/gallery/chemistry",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/9.png"
@@ -326,19 +326,19 @@
   "stats": {
     "name": "stats",
     "label": "Stats",
-    "title": "Cross Designs by Numbers",
-    "description": "Join thousands of creators designing meaningful crosses.",
+    "title": "TurboLearn by Numbers",
+    "description": "Join thousands of students enhancing their learning efficiency.",
     "icon": "FaRegHeart",
     "items": [
       {
         "title": "Trusted by",
         "label": "10K+",
-        "description": "Creators"
+        "description": "Students"
       },
       {
         "title": "Created",
         "label": "50K+",
-        "description": "Cross Designs"
+        "description": "Study Notes"
       },
       {
         "title": "Generate in",
@@ -351,16 +351,16 @@
     "name": "pricing",
     "label": "Pricing",
     "title": "Choose Your Perfect Plan",
-    "description": "Create beautiful cross designs with our flexible pricing options.",
+    "description": "Create effective study materials with our flexible pricing options.",
     "groups": [],
     "items": [
       {
-        "title": "Starter",
-        "description": "Perfect for personal use",
+        "title": "Student",
+        "description": "Perfect for individual learners",
         "features_title": "Includes",
         "features": [
-          "10 AI cross designs",
-          "Basic design tools",
+          "3 AI note generations",
+          "Basic diagram tools",
           "Standard sharing options",
           "Email support",
           "Basic templates"
@@ -375,27 +375,27 @@
         "is_featured": false,
         "tip": "No pay.",
         "button": {
-          "title": "Get Cross Designs",
+          "title": "Get TurboLearn",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "starter",
-        "product_name": "Cross Designs Starter",
+        "product_id": "student",
+        "product_name": "TurboLearn Student",
         "credits": 5,
         "valid_months": 1
       },
       {
-        "title": "Professional",
-        "description": "Ideal for artists and designers",
+        "title": "Academic",
+        "description": "Ideal for serious students and educators",
         "label": "Popular",
-        "features_title": "Everything in Starter, plus",
+        "features_title": "Everything in Student, plus",
         "features": [
-          "Unlimited AI cross designs",
-          "Advanced design tools",
-          "Custom branding options",
+          "Unlimited AI note generations",
+          "Advanced diagram tools",
+          "Custom formatting options",
           "Priority support",
           "Premium templates",
-          "Analytics and insights"
+          "Learning analytics"
         ],
         "interval": "one-time",
         "amount": 900,
@@ -407,22 +407,22 @@
         "is_featured": true,
         "tip": "Pay once.",
         "button": {
-          "title": "Get Cross Designs",
+          "title": "Get TurboLearn",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "professional",
-        "product_name": "Cross Designs Professional",
+        "product_id": "academic",
+        "product_name": "TurboLearn Academic",
         "credits": 10,
         "valid_months": 1
       },
       {
-        "title": "Enterprise",
-        "description": "For religious organizations and large groups",
-        "features_title": "Everything in Professional, plus",
+        "title": "Institution",
+        "description": "For schools and educational organizations",
+        "features_title": "Everything in Academic, plus",
         "features": [
           "Custom AI model training",
-          "Bulk design processing",
+          "Bulk material processing",
           "API access",
           "Dedicated support",
           "White-label solution",
@@ -438,12 +438,12 @@
         "is_featured": false,
         "tip": "Pay once.",
         "button": {
-          "title": "Get Cross Designs",
+          "title": "Get TurboLearn",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "enterprise",
-        "product_name": "Cross Designs Enterprise",
+        "product_id": "institution",
+        "product_name": "TurboLearn Institution",
         "credits": 100,
         "valid_months": 12
       }
@@ -452,30 +452,30 @@
   "testimonial": {
     "name": "testimonial",
     "label": "Testimonial",
-    "title": "What Users Say About Cross Designs",
-    "description": "Hear from creators who transformed their visions with Cross Designs.",
+    "title": "What Users Say About TurboLearn",
+    "description": "Hear from students who transformed their study habits with TurboLearn.",
     "icon": "GoThumbsup",
     "items": [
       {
         "title": "Sarah Chen",
-        "label": "Religious Artist",
-        "description": "Cross Designs has revolutionized my artwork! The AI-generated designs capture the sacred essence perfectly. My clients are amazed by the results.",
+        "label": "Medical Student",
+        "description": "TurboLearn has revolutionized my study routine! The AI-generated notes capture key concepts perfectly. My exam scores have improved significantly.",
         "image": {
           "src": "/imgs/users/1.png"
         }
       },
       {
         "title": "Michael Kim",
-        "label": "Church Leader",
-        "description": "We use Cross Designs for our church materials. The AI understands religious symbolism beautifully, creating meaningful designs for our community.",
+        "label": "Computer Science Major",
+        "description": "We use TurboLearn for our study group. The diagrams help us understand complex algorithms and data structures visually, making difficult concepts click.",
         "image": {
           "src": "/imgs/users/2.png"
         }
       },
       {
         "title": "Emma Thompson",
-        "label": "Designer",
-        "description": "As a designer, Cross Designs helps me create unique, spiritually meaningful artwork. The AI visualization makes every cross design truly special!",
+        "label": "High School Teacher",
+        "description": "As an educator, TurboLearn helps me create clear learning materials for my students. The AI visualization makes every concept more accessible!",
         "image": {
           "src": "/imgs/users/3.png"
         }
@@ -486,47 +486,47 @@
     "name": "faq",
     "label": "FAQ",
     "title": "Frequently Asked Questions",
-    "description": "Have questions about Cross Designs? Find answers here.",
+    "description": "Have questions about TurboLearn? Find answers here.",
     "items": [
       {
-        "title": "How does Cross Designs' AI generation work?",
-        "description": "Simply describe your desired cross style and elements, and our AI technology will generate a beautiful, customized cross design based on your input."
+        "title": "How does TurboLearn's AI note generation work?",
+        "description": "Simply upload your study materials, and our AI technology will analyze the content to generate concise, well-structured notes highlighting key concepts and relationships."
       },
       {
-        "title": "What styles of crosses can I create?",
-        "description": "You can create various styles including traditional, modern, Celtic, Orthodox, minimalist, and decorative crosses. Our AI understands different cultural and religious design elements."
+        "title": "What types of diagrams can I create?",
+        "description": "You can create various diagrams including concept maps, flowcharts, process diagrams, timelines, and relationship charts. Our AI understands different educational contexts."
       },
       {
         "title": "What file formats are available for download?",
-        "description": "Cross Designs provides high-resolution PNG, JPG, and SVG formats, suitable for both digital use and physical printing."
+        "description": "TurboLearn provides notes in PDF, DOCX, and markdown formats, while diagrams are available in PNG, JPG, and SVG formats for both digital use and printing."
       },
       {
-        "title": "Can I customize the colors and patterns?",
-        "description": "Yes! You can fully customize colors, patterns, decorative elements, and proportions to create your perfect cross design."
+        "title": "Can I customize the notes and diagrams?",
+        "description": "Yes! You can fully customize formatting, colors, layout, and organization to match your learning style and preferences."
       },
       {
-        "title": "How many designs can I generate?",
-        "description": "The number of designs depends on your subscription plan. Free users get 10 designs, while paid plans offer more or unlimited generations."
+        "title": "How many notes can I generate?",
+        "description": "The number of generations depends on your subscription plan. Free users get 10 generations, while paid plans offer more or unlimited generations."
       },
       {
-        "title": "Can I modify designs after generation?",
-        "description": "Yes! You can refine any generated design by adjusting colors, adding elements, or requesting variations through our AI system."
+        "title": "Can I modify notes after generation?",
+        "description": "Yes! You can refine any generated notes by editing content, adding annotations, or requesting variations through our AI system."
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Start Creating Beautiful Cross Designs Today",
-    "description": "Transform your spiritual vision into stunning cross designs with AI-powered creativity.",
+    "title": "Start Creating Effective Study Materials Today",
+    "description": "Transform your learning experience with AI-powered notes and diagrams for better comprehension and retention.",
     "buttons": [
       {
-        "title": "Start Creating",
-        "url": "https://crossdesigns.net",
+        "title": "Start Learning",
+        "url": "https://turbo-learn.com",
         "target": "_blank",
         "icon": "GoArrowUpRight"
       },
       {
-        "title": "View Gallery",
+        "title": "View Examples",
         "url": "/#showcase",
         "target": "_blank",
         "variant": "outline"
@@ -536,15 +536,15 @@
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "Cross Designs",
-      "description": "Transform your visions into stunning cross designs with AI-powered technology. Create, customize, and share your spiritual masterpieces.",
+      "title": "TurboLearn",
+      "description": "Transform your study materials into concise notes and clear diagrams with AI-powered technology. Create, customize, and share your learning resources.",
       "logo": {
         "src": "/logo.png",
-        "alt": "Cross Designs"
+        "alt": "TurboLearn"
       },
       "url": "/"
     },
-    "copyright": "© 2024 • Cross Designs All rights reserved.",
+    "copyright": "© 2024 • TurboLearn All rights reserved.",
     "nav": {
       "items": [
         {
@@ -571,38 +571,38 @@
           "title": "Resources",
           "children": [
             {
-              "title": "Design Tips",
-              "url": "https://crossdesigns.net/tips",
+              "title": "Study Tips",
+              "url": "https://turbo-learn.com/tips",
               "target": "_blank"
             },
             {
               "title": "Templates",
-              "url": "https://crossdesigns.net/templates",
+              "url": "https://turbo-learn.com/templates",
               "target": "_blank"
             },
             {
               "title": "Blog",
-              "url": "https://crossdesigns.net/blog",
+              "url": "https://turbo-learn.com/blog",
               "target": "_blank"
             }
           ]
         },
         {
-          "title": "Collections",
+          "title": "Subjects",
           "children": [
             {
-              "title": "Traditional",
-              "url": "https://crossdesigns.net/collections/traditional",
+              "title": "Science",
+              "url": "https://turbo-learn.com/subjects/science",
               "target": "_blank"
             },
             {
-              "title": "Modern",
-              "url": "https://crossdesigns.net/collections/modern",
+              "title": "Humanities",
+              "url": "https://turbo-learn.com/subjects/humanities",
               "target": "_blank"
             },
             {
-              "title": "Custom",
-              "url": "https://crossdesigns.net/collections/custom",
+              "title": "Business",
+              "url": "https://turbo-learn.com/subjects/business",
               "target": "_blank"
             }
           ]
@@ -624,25 +624,25 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/crossdesigns",
+          "url": "https://x.com/turbolearn",
           "target": "_blank"
         },
         {
           "title": "Instagram",
           "icon": "RiGithubFill",
-          "url": "https://instagram.com/crossdesigns",
+          "url": "https://instagram.com/turbolearn",
           "target": "_blank"
         },
         {
-          "title": "Pinterest",
+          "title": "Discord",
           "icon": "RiDiscordFill",
-          "url": "https://pinterest.com/crossdesigns",
+          "url": "https://discord.com/turbolearn",
           "target": "_blank"
         },
         {
           "title": "Email",
           "icon": "RiMailLine",
-          "url": "mailto:support@crossdesigns.net",
+          "url": "cms18923587457@gamil.com",
           "target": "_self"
         }
       ]

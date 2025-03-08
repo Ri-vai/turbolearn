@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "AI-Powered Cross Design Generator | Cross Designs",
-    "description": "Create beautiful, meaningful cross designs with our AI generator. Transform your spiritual vision into stunning artwork with customizable styles and elements.",
-    "keywords": "cross designs, AI cross generator, religious art, christian design, sacred art, digital cross"
+    "title": "AI-Powered Learning Assistant | TurboLearn",
+    "description": "Transform your study materials into concise notes and clear diagrams with our AI learning assistant. Enhance your learning efficiency and retention.",
+    "keywords": "turbolearn, AI notes generator, learning assistant, study tool, diagram generator, educational AI"
   },
   "user": {
     "sign_in": "Sign In",
@@ -32,7 +32,7 @@
   },
   "my_orders": {
     "title": "My Orders",
-    "description": "orders paid with ShipAny.",
+    "description": "orders paid with TurboLearn.",
     "no_orders": "No orders found",
     "tip": "",
     "activate_order": "Activate Order",
@@ -80,12 +80,12 @@
   },
   "blog": {
     "title": "Blog",
-    "description": "News, resources, and updates about ShipAny",
+    "description": "News, resources, and updates about TurboLearn",
     "read_more_text": "Read More"
   },
   "pages": {
     "img-generate": {
-      "title": "AI Cross Design Generator",
+      "title": "AI Learning Assistant",
       "form": {
         "size": {
           "placeholder": "Select Size",
@@ -101,14 +101,14 @@
         "style": {
           "placeholder": "Select Style",
           "options": {
-            "realistic_image": "Realistic",
-            "digital_illustration": "Digital Art",
+            "realistic_image": "Clean",
+            "digital_illustration": "Digital Illustration",
             "vector_illustration": "Vector Art",
             "realistic_image/b_and_w": "Black & White",
-            "realistic_image/hard_flash": "Hard Flash",
+            "realistic_image/hard_flash": "High Contrast",
             "realistic_image/hdr": "HDR",
             "realistic_image/natural_light": "Natural Light",
-            "realistic_image/studio_portrait": "Studio Portrait"
+            "realistic_image/studio_portrait": "Professional"
           }
         },
         "text_enabled": {
@@ -127,16 +127,16 @@
         "text_position": {
           "placeholder": "Text Position",
           "options": {
-            "behind": "Behind the Cross",
-            "inside": "Inside the Cross"
+            "behind": "Behind Diagram",
+            "inside": "Inside Diagram"
           }
         },
-        "generate": "Generate Cross"
+        "generate": "Generate Notes"
       },
       "preview": {
-        "loading": "Generating cross design...",
+        "loading": "Generating study notes...",
         "empty": {
-          "title": "Generated cross design will be displayed here",
+          "title": "Generated notes will be displayed here",
           "description": "Please fill in the options on the left and click generate"
         }
       },

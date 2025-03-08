@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "AI 十字架设计生成器 | Cross Designs",
-    "description": "使用我们的 AI 生成器创建精美、有意义的十字架设计。将您的灵性愿景转化为令人惊叹的艺术作品，支持自定义风格和元素。",
-    "keywords": "十字架设计, AI生成器, 宗教艺术, 基督教设计, 圣艺术, 数字十字架"
+    "title": "AI 学习助手 | TurboLearn",
+    "description": "使用我们的 AI 学习助手将您的学习材料转化为简洁的笔记和清晰的图表。提高您的学习效率和记忆力。",
+    "keywords": "turbolearn, AI笔记生成器, 学习助手, 学习工具, 图表生成器, 教育AI"
   },
   "user": {
     "sign_in": "登录",
@@ -32,7 +32,7 @@
   },
   "my_orders": {
     "title": "我的订单",
-    "description": "在 ShipAny 上购买的订单。",
+    "description": "在 TurboLearn 上购买的订单。",
     "no_orders": "未找到订单",
     "tip": "",
     "activate_order": "激活订单",
@@ -80,12 +80,12 @@
   },
   "blog": {
     "title": "博客",
-    "description": "关于 ShipAny 的新闻、资源和更新",
+    "description": "关于 TurboLearn 的新闻、资源和更新",
     "read_more_text": "阅读更多"
   },
   "pages": {
     "img-generate": {
-      "title": "AI 十字架设计生成器",
+      "title": "AI 学习助手",
       "form": {
         "size": {
           "placeholder": "选择尺寸",
@@ -101,14 +101,14 @@
         "style": {
           "placeholder": "选择风格",
           "options": {
-            "realistic_image": "写实风格",
+            "realistic_image": "简洁",
             "digital_illustration": "数字艺术",
             "vector_illustration": "矢量艺术",
             "realistic_image/b_and_w": "黑白",
-            "realistic_image/hard_flash": "硬闪光",
+            "realistic_image/hard_flash": "高对比度",
             "realistic_image/hdr": "HDR",
             "realistic_image/natural_light": "自然光",
-            "realistic_image/studio_portrait": "工作室"
+            "realistic_image/studio_portrait": "专业风格"
           }
         },
         "text_enabled": {
@@ -127,16 +127,16 @@
         "text_position": {
           "placeholder": "文字位置",
           "options": {
-            "behind": "十字架背后",
-            "inside": "十字架内部"
+            "behind": "图表背景",
+            "inside": "图表内部"
           }
         },
-        "generate": "生成十字架"
+        "generate": "生成笔记"
       },
       "preview": {
-        "loading": "正在生成十字架设计...",
+        "loading": "正在生成学习笔记...",
         "empty": {
-          "title": "生成的十字架设计将在这里显示",
+          "title": "生成的笔记将在这里显示",
           "description": "请在左侧填写选项并点击生成按钮"
         }
       },

@@ -3,10 +3,10 @@
   "theme": "light",
   "header": {
     "brand": {
-      "title": "Cross Designs",
+      "title": "TurboLearn",
       "logo": {
         "src": "/logo.png",
-        "alt": "Cross Designs"
+        "alt": "TurboLearn"
       },
       "url": "/"
     },
@@ -26,17 +26,17 @@
           "title": "作品展示",
           "children": [
             {
-              "title": "经典系列",
-              "description": "传统十字架设计",
-              "icon": "MdOutlineWallpaper",
-              "url": "https://crossdesigns.net/gallery/traditional",
+              "title": "笔记示例",
+              "description": "AI生成的学习笔记",
+              "icon": "RiRedPacketLine",
+              "url": "/#showcase",
               "target": "_blank"
             },
             {
-              "title": "现代系列",
-              "description": "当代十字架艺术",
+              "title": "图表样本",
+              "description": "关系与流程图",
               "icon": "RiRedPacketLine",
-              "url": "https://crossdesigns.net/gallery/modern",
+              "url": "/#showcase",
               "target": "_blank"
             }
           ]
@@ -45,8 +45,8 @@
     },
     "buttons": [
       {
-        "title": "创建十字架",
-        "url": "https://crossdesigns.net",
+        "title": "开始学习",
+        "url": "https://turbo-learn.com",
         "target": "_blank",
         "variant": "link",
         "icon": "RiArrowRightUpLine"
@@ -57,25 +57,25 @@
     "show_locale": true
   },
   "hero": {
-    "title": "将您的创意转化为神圣的十字架设计",
-    "highlight_text": "Cross Designs",
-    "description": "Cross Designs 是您的AI助手，可以将创意转变成精美的十字架艺术作品。<br/>设计、定制并分享您的灵性表达。",
+    "title": "学得更多，学得更快",
+    "highlight_text": "TurboLearn",
+    "description": "TurboLearn 是您的AI学习助手，可以创建简洁的笔记和清晰的图表。<br/>上传材料，生成见解，立即提高学习效率。",
     "announcement": {
       "label": "新功能",
-      "title": "🎉 AI十字架生成器正式发布",
+      "title": "🎉 AI图表生成器正式发布",
       "url": "/#pricing"
     },
     "tip": "🎁 发布特惠：早鸟用户五折优惠",
     "buttons": [
       {
-        "title": "开始创作",
+        "title": "生成笔记",
         "icon": "RiFlashlightFill",
-        "url": "/#pricing",
+        "url": "/img-generate",
         "target": "_self",
         "variant": "default"
       },
       {
-        "title": "查看作品",
+        "title": "查看示例",
         "icon": "RiDiscordFill",
         "url": "/#showcase",
         "target": "_self",
@@ -86,7 +86,7 @@
     "show_badge": false
   },
   "branding": {
-    "title": "Cross Designs 建立在巨人的肩膀上",
+    "title": "TurboLearn 建立在巨人的肩膀上",
     "items": [
       {
         "title": "Next.js",
@@ -127,55 +127,55 @@
   },
   "introduce": {
     "name": "introduce",
-    "title": "您的个人十字架设计助手",
+    "title": "您的个人学习助手",
     "label": "关于我们",
-    "description": "Cross Designs 使用先进的AI技术，将您的创意转化为精美的十字架艺术作品。",
+    "description": "TurboLearn 使用先进的AI技术，将复杂的学习材料转化为清晰、简洁的笔记和图表。",
     "image": {
       "src": "/imgs/features/1.png"
     },
     "items": [
       {
-        "title": "AI驱动设计",
-        "description": "使用智能AI生成器创建精美的十字架设计。",
+        "title": "AI驱动笔记",
+        "description": "从任何学习材料生成全面的学习笔记。",
         "icon": "RiNextjsFill"
       },
       {
-        "title": "风格管理",
-        "description": "按风格、主题或场合整理您的设计作品。",
+        "title": "智能图表",
+        "description": "创建关系和流程图以可视化概念。",
         "icon": "RiDatabase2Line"
       },
       {
-        "title": "即时分享",
-        "description": "在各平台上即时分享您的十字架设计。",
+        "title": "便捷分享",
+        "description": "在各平台上即时分享您的笔记和图表。",
         "icon": "RiCloudyFill"
       }
     ]
   },
   "benefit": {
     "name": "benefit",
-    "title": "为什么选择 Cross Designs",
+    "title": "为什么选择 TurboLearn",
     "label": "优势",
-    "description": "体验AI技术与灵性艺术的完美结合，为创作者打造的专业功能。",
+    "description": "体验AI技术与教育专业知识的完美结合，为最大化学习效率而设计的功能。",
     "items": [
       {
-        "title": "智能食谱分析",
-        "description": "我们的AI技术能够理解食材、烹饪方法和摆盘风格，即时创建精美的视觉效果。",
+        "title": "智能内容分析",
+        "description": "我们的AI技术能够理解教育内容并自动提取关键概念。",
         "icon": "RiNextjsFill",
         "image": {
           "src": "/imgs/features/2.png"
         }
       },
       {
-        "title": "精美模板",
-        "description": "从我们的专业设计模板库中选择，以不同风格展示您的食谱。",
+        "title": "视觉学习",
+        "description": "将复杂的关系转化为清晰、直观的图表，提高记忆效果。",
         "icon": "RiClapperboardAiLine",
         "image": {
           "src": "/imgs/features/3.png"
         }
       },
       {
-        "title": "美食社区",
-        "description": "加入我们充满活力的美食爱好者社区，分享食谱、获取灵感、交流烹饪技巧。",
+        "title": "学习社区",
+        "description": "加入我们的社区，分享笔记并获取学习灵感。",
         "icon": "RiCodeFill",
         "image": {
           "src": "/imgs/features/4.png"
@@ -185,8 +185,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "如何使用 Cross Designs 创作",
-    "description": "通过四个简单步骤，将您的食谱转化为视觉杰作：",
+    "title": "如何使用 TurboLearn 学习",
+    "description": "通过四个简单步骤，提升您的学习效果：",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -194,29 +194,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "输入食谱",
-        "description": "只需输入或粘贴您的食谱文本，包括食材和烹饪步骤。",
+        "title": "上传材料",
+        "description": "上传您的教科书、讲义或学习资料。",
         "image": {
           "src": "/imgs/features/5.png"
         }
       },
       {
-        "title": "选择风格",
-        "description": "从我们的精美模板集中选择，匹配您食谱的氛围和风格。",
+        "title": "选择格式",
+        "description": "选择简洁笔记、图表或两者兼具。",
         "image": {
           "src": "/imgs/features/6.png"
         }
       },
       {
-        "title": "AI可视化",
-        "description": "让我们的AI将您的食谱转化为专业级的美食摄影作品。",
+        "title": "AI生成",
+        "description": "让我们的AI将您的材料转化为清晰的学习辅助工具。",
         "image": {
           "src": "/imgs/features/7.png"
         }
       },
       {
-        "title": "分享与启发",
-        "description": "与亲朋好友或社交媒体粉丝分享您的精美食谱展示。",
+        "title": "学习与分享",
+        "description": "下载您的笔记或直接与同学分享。",
         "image": {
           "src": "/imgs/features/8.png"
         }
@@ -225,95 +225,95 @@
   },
   "feature": {
     "name": "feature",
-    "title": "Cross Designs 的独特功能",
-    "description": "创建和分享精美食谱所需的一切功能。",
+    "title": "TurboLearn 的独特功能",
+    "description": "提高学习效率所需的一切功能。",
     "items": [
       {
-        "title": "AI图像生成",
-        "description": "将文字食谱即时转化为专业级美食摄影作品。",
+        "title": "AI笔记生成",
+        "description": "从任何材料即时创建简洁的学习笔记。",
         "icon": "RiNextjsFill"
       },
       {
-        "title": "食谱分类",
-        "description": "按早餐、午餐、晚餐和小食分类，方便查找。",
+        "title": "图表创建",
+        "description": "通过自动生成的图表可视化关系和流程。",
         "icon": "RiKey2Fill"
       },
       {
-        "title": "自定义样式",
-        "description": "使用各种主题和布局个性化您的食谱展示。",
+        "title": "自定义格式",
+        "description": "调整笔记样式和图表布局以匹配您的偏好。",
         "icon": "RiDatabase2Line"
       },
       {
-        "title": "便捷分享",
-        "description": "在各社交媒体平台上即时分享您的精美食谱。",
+        "title": "多格式导出",
+        "description": "以各种格式下载笔记，适应任何学习情境。",
         "icon": "RiCloudy2Fill"
       },
       {
-        "title": "食谱合集",
-        "description": "为不同场合创建和管理多个食谱合集。",
+        "title": "学习集合",
+        "description": "按科目或课程保存和组织您的笔记。",
         "icon": "RiBarChart2Line"
       },
       {
         "title": "智能搜索",
-        "description": "通过食材、菜系或餐类快速找到食谱。",
+        "description": "在所有生成的材料中查找特定概念。",
         "icon": "RiRobot2Line"
       }
     ]
   },
   "showcase": {
     "name": "showcase",
-    "title": "十字架展示",
-    "description": "探索我们社区创作的精美十字架设计作品。",
+    "title": "学习作品展示",
+    "description": "探索使用 TurboLearn 创建的笔记和图表示例。",
     "items": [
       {
-        "title": "传统十字架",
-        "description": "经典神圣设计",
-        "url": "https://crossdesigns.net/gallery/traditional",
+        "title": "生物学笔记",
+        "description": "细胞结构与功能",
+        "url": "https://turbo-learn.com/gallery/biology",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/7.png"
         }
       },
       {
-        "title": "现代十字架",
-        "description": "当代艺术诠释",
-        "url": "https://crossdesigns.net/gallery/modern",
+        "title": "物理学图表",
+        "description": "力与运动概念",
+        "url": "https://turbo-learn.com/gallery/physics",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/5.png"
         }
       },
       {
-        "title": "凯尔特十字架",
-        "description": "凯尔特风格灵感",
-        "url": "https://crossdesigns.net/gallery/celtic",
+        "title": "历史时间线",
+        "description": "二战事件",
+        "url": "https://turbo-learn.com/gallery/history",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/1.png"
         }
       },
       {
-        "title": "东正教十字架",
-        "description": "东正教传统",
-        "url": "https://crossdesigns.net/gallery/orthodox",
+        "title": "数学公式",
+        "description": "微积分要点",
+        "url": "https://turbo-learn.com/gallery/math",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/2.png"
         }
       },
       {
-        "title": "极简十字架",
-        "description": "简约优雅",
-        "url": "https://crossdesigns.net/gallery/minimalist",
+        "title": "计算机科学",
+        "description": "算法流程图",
+        "url": "https://turbo-learn.com/gallery/cs",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/3.png"
         }
       },
       {
-        "title": "装饰十字架",
-        "description": "华丽设计",
-        "url": "https://crossdesigns.net/gallery/decorative",
+        "title": "化学笔记",
+        "description": "有机反应",
+        "url": "https://turbo-learn.com/gallery/chemistry",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/9.png"
@@ -324,19 +324,19 @@
   "stats": {
     "name": "stats",
     "label": "统计数据",
-    "title": "Cross Designs 数据一览",
-    "description": "加入数千名创作精美十字架的设计师。",
+    "title": "TurboLearn 数据一览",
+    "description": "加入数千名提高学习效率的学生。",
     "icon": "FaRegHeart",
     "items": [
       {
         "title": "信赖",
         "label": "10K+",
-        "description": "创作者"
+        "description": "学生"
       },
       {
         "title": "已创建",
         "label": "50K+",
-        "description": "十字架设计"
+        "description": "学习笔记"
       },
       {
         "title": "生成用时",
@@ -349,15 +349,15 @@
     "name": "pricing",
     "label": "定价",
     "title": "选择您的完美方案",
-    "description": "灵活的定价选项，将您的创意转化为精美的十字架设计。",
+    "description": "通过灵活的定价选项创建有效的学习材料。",
     "items": [
       {
-        "title": "入门版",
-        "description": "适合个人使用",
+        "title": "学生版",
+        "description": "适合个人学习者",
         "features_title": "包含",
         "features": [
-          "10次AI十字架设计",
-          "基础设计工具",
+          "3次AI笔记生成",
+          "基础图表工具",
           "标准分享选项",
           "邮件支持",
           "基础模板"
@@ -372,27 +372,27 @@
         "is_featured": false,
         "tip": "无需付费",
         "button": {
-          "title": "开始使用",
-          "url": "/img-generate",
+          "title": "获取 TurboLearn",
+          "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "starter",
-        "product_name": "Cross Designs 入门版",
+        "product_id": "student",
+        "product_name": "TurboLearn 学生版",
         "credits": 5,
         "valid_months": 1
       },
       {
-        "title": "专业版",
-        "description": "适合艺术家和设计师",
+        "title": "学术版",
+        "description": "适合认真的学生和教育工作者",
         "label": "最受欢迎",
-        "features_title": "包含入门版所有功能，另加",
+        "features_title": "包含学生版所有功能，另加",
         "features": [
-          "无限AI十字架设计",
-          "高级设计工具",
-          "自定义品牌选项",
+          "无限AI笔记生成",
+          "高级图表工具",
+          "自定义格式选项",
           "优先支持",
           "高级模板",
-          "数据分析与洞察"
+          "学习分析"
         ],
         "interval": "one-time",
         "amount": 900,
@@ -404,22 +404,22 @@
         "is_featured": true,
         "tip": "一次付费",
         "button": {
-          "title": "立即购买",
+          "title": "获取 TurboLearn",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "professional",
-        "product_name": "Cross Designs 专业版",
+        "product_id": "academic",
+        "product_name": "TurboLearn 学术版",
         "credits": 10,
         "valid_months": 1
       },
       {
-        "title": "企业版",
-        "description": "适合宗教组织和大型团体",
-        "features_title": "包含专业版所有功能，另加",
+        "title": "机构版",
+        "description": "适合学校和教育组织",
+        "features_title": "包含学术版所有功能，另加",
         "features": [
           "自定义AI模型训练",
-          "批量设计处理",
+          "批量材料处理",
           "API访问",
           "专属支持",
           "白标解决方案",
@@ -435,12 +435,12 @@
         "is_featured": false,
         "tip": "一次付费",
         "button": {
-          "title": "获取 Cross Designs",
+          "title": "获取 TurboLearn",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "premium",
-        "product_name": "Cross Designs 企业版",
+        "product_id": "institution",
+        "product_name": "TurboLearn 机构版",
         "credits": 100,
         "valid_months": 12
       }
@@ -449,30 +449,30 @@
   "testimonial": {
     "name": "testimonial",
     "label": "用户评价",
-    "title": "用户如何评价 Cross Designs",
-    "description": "听听创作者们使用 Cross Designs 设计十字架的体验。",
+    "title": "用户如何评价 TurboLearn",
+    "description": "听听使用 TurboLearn 改变学习习惯的学生们的评价。",
     "icon": "GoThumbsup",
     "items": [
       {
         "title": "陈莎拉",
-        "label": "宗教艺术家",
-        "description": "Cross Designs 彻底改变了我的创作方式！AI生成的设计完美捕捉了神圣的精髓。我的客户对成品赞不绝口。",
+        "label": "医学生",
+        "description": "TurboLearn 彻底改变了我的学习方式！AI生成的笔记完美捕捉了关键概念。我的考试成绩显著提高。",
         "image": {
           "src": "/imgs/users/1.png"
         }
       },
       {
         "title": "金迈克",
-        "label": "教堂负责人",
-        "description": "我们使用 Cross Designs 创作教堂的艺术品。AI对宗教符号的理解令人惊叹，为我们的社区创造了富有意义的设计。",
+        "label": "计算机科学专业",
+        "description": "我们的学习小组使用 TurboLearn。图表帮助我们直观理解复杂的算法和数据结构，使难懂的概念变得清晰。",
         "image": {
           "src": "/imgs/users/2.png"
         }
       },
       {
         "title": "艾玛·汤普森",
-        "label": "设计师",
-        "description": "作为设计师，Cross Designs 帮助我创作独特、富有灵性的艺术品。AI可视化让每个十字架设计都独具特色！",
+        "label": "高中教师",
+        "description": "作为教育工作者，TurboLearn 帮助我为学生创建清晰的学习材料。AI可视化使每个概念更容易理解！",
         "image": {
           "src": "/imgs/users/3.png"
         }
@@ -483,48 +483,48 @@
     "name": "faq",
     "label": "常见问题",
     "title": "常见问题解答",
-    "description": "关于 Cross Designs 的问题？在这里找到答案。",
+    "description": "关于 TurboLearn 的问题？在这里找到答案。",
     "items": [
       {
-        "title": "Cross Designs 的 AI 生成是如何工作的？",
-        "description": "只需描述您想要的十字架风格和元素，我们的AI技术就会根据您的输入生成精美的、定制化的十字架设计。"
+        "title": "TurboLearn 的 AI 笔记生成是如何工作的？",
+        "description": "只需上传您的学习材料，我们的AI技术就会分析内容，生成简洁、结构良好的笔记，突出关键概念和关系。"
       },
       {
-        "title": "可以创作哪些风格的十字架？",
-        "description": "您可以创作多种风格，包括传统、现代、凯尔特、东正教、极简和装饰性十字架。我们的AI理解不同文化和宗教的设计元素。"
+        "title": "可以创建哪些类型的图表？",
+        "description": "您可以创建各种图表，包括概念图、流程图、过程图、时间线和关系图。我们的AI能理解不同的教育背景。"
       },
       {
-        "title": "可以下载哪些文件格式？",
-        "description": "Cross Designs 提供高分辨率的PNG、JPG和SVG格式，适用于数字使用和实体打印。"
+        "title": "有哪些文件格式可供下载？",
+        "description": "TurboLearn 提供PDF、DOCX和markdown格式的笔记，而图表则提供PNG、JPG和SVG格式，适用于数字使用和打印。"
       },
       {
-        "title": "能自定义颜色和图案吗？",
-        "description": "当然可以！您可以完全自定义颜色、图案、装饰元素和比例，创造完美的十字架设计。"
+        "title": "我可以自定义笔记和图表吗？",
+        "description": "是的！您可以完全自定义格式、颜色、布局和组织，以匹配您的学习风格和偏好。"
       },
       {
-        "title": "可以生成多少设计？",
-        "description": "生成数量取决于您的订阅方案。免费用户可获得10次设计机会，付费方案则提供更多或无限次生成。"
+        "title": "我可以生成多少笔记？",
+        "description": "生成数量取决于您的订阅计划。免费用户可获得10次生成，而付费计划提供更多或无限生成。"
       },
       {
-        "title": "生成后还能修改设计吗？",
-        "description": "可以！您可以通过调整颜色、添加元素或通过AI系统请求变体来完善任何生成的设计。"
+        "title": "生成后可以修改笔记吗？",
+        "description": "是的！您可以通过编辑内容、添加注释或通过我们的AI系统请求变体来完善任何生成的笔记。"
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "今天就开始创建精美的十字架设计",
-    "description": "用AI驱动的创意将您的灵感转化为视觉艺术。",
+    "title": "立即开始创建有效的学习材料",
+    "description": "通过AI驱动的笔记和图表改变您的学习体验，提高理解和记忆效果。",
     "buttons": [
       {
-        "title": "开始创作",
-        "url": "https://crossdesigns.net",
+        "title": "开始学习",
+        "url": "https://turbo-learn.com",
         "target": "_blank",
         "icon": "GoArrowUpRight"
       },
       {
-        "title": "浏览作品",
-        "url": "https://crossdesigns.net/gallery",
+        "title": "查看示例",
+        "url": "/#showcase",
         "target": "_blank",
         "variant": "outline"
       }
@@ -533,15 +533,15 @@
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "Cross Designs",
-      "description": "使用AI驱动的技术将您的创意转化为精美的十字架设计。创建、定制并分享您的灵性艺术作品。",
+      "title": "TurboLearn",
+      "description": "使用AI驱动技术将您的学习材料转化为简洁的笔记和清晰的图表。创建、自定义和分享您的学习资源。",
       "logo": {
         "src": "/logo.png",
-        "alt": "Cross Designs"
+        "alt": "TurboLearn"
       },
       "url": "/"
     },
-    "copyright": "© 2024 • Cross Designs 保留所有权利。",
+    "copyright": "© 2024 • TurboLearn 保留所有权利。",
     "nav": {
       "items": [
         {
@@ -568,38 +568,38 @@
           "title": "资源",
           "children": [
             {
-              "title": "设计技巧",
-              "url": "https://crossdesigns.net/tips",
+              "title": "学习技巧",
+              "url": "https://turbo-learn.com/tips",
               "target": "_blank"
             },
             {
               "title": "模板",
-              "url": "https://crossdesigns.net/templates",
+              "url": "https://turbo-learn.com/templates",
               "target": "_blank"
             },
             {
               "title": "博客",
-              "url": "https://crossdesigns.net/blog",
+              "url": "https://turbo-learn.com/blog",
               "target": "_blank"
             }
           ]
         },
         {
-          "title": "作品集",
+          "title": "学科",
           "children": [
             {
-              "title": "传统系列",
-              "url": "https://crossdesigns.net/collections/traditional",
+              "title": "科学",
+              "url": "https://turbo-learn.com/subjects/science",
               "target": "_blank"
             },
             {
-              "title": "现代系列",
-              "url": "https://crossdesigns.net/collections/modern",
+              "title": "人文",
+              "url": "https://turbo-learn.com/subjects/humanities",
               "target": "_blank"
             },
             {
-              "title": "定制系列",
-              "url": "https://crossdesigns.net/collections/custom",
+              "title": "商业",
+              "url": "https://turbo-learn.com/subjects/business",
               "target": "_blank"
             }
           ]
@@ -608,7 +608,7 @@
           "title": "友情链接",
           "children": [
             {
-              "title": "AI Logo Maker",
+              "title": "AI Logo 制作器",
               "url": "https://www.logoai.com/",
               "target": "_blank"
             }
@@ -621,25 +621,25 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/crossdesigns",
+          "url": "https://x.com/turbolearn",
           "target": "_blank"
         },
         {
           "title": "Instagram",
           "icon": "RiGithubFill",
-          "url": "https://instagram.com/crossdesigns",
+          "url": "https://instagram.com/turbolearn",
           "target": "_blank"
         },
         {
-          "title": "Pinterest",
+          "title": "Discord",
           "icon": "RiDiscordFill",
-          "url": "https://pinterest.com/crossdesigns",
+          "url": "https://discord.com/turbolearn",
           "target": "_blank"
         },
         {
           "title": "邮箱",
           "icon": "RiMailLine",
-          "url": "mailto:support@crossdesigns.net",
+          "url": "cms18923587457@gamil.com",
           "target": "_self"
         }
       ]
