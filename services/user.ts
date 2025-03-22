@@ -37,7 +37,7 @@ export async function saveUser(user: User) {
 export async function getUserUuid() {
   // 开发环境返回测试用户 ID
   if (process.env.NODE_ENV === 'development') {
-    return "30c2108c-52e2-4882-88dd-ece0edf90a11"; // 使用数据库中真实存在的用户 UUID
+    return "b4e297c6-4cc1-4be4-ac3f-2ce604b5905c"; // 使用数据库中真实存在的用户 UUID
   }
 
   let user_uuid = "";

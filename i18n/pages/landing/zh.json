@@ -75,6 +75,13 @@
         "variant": "default"
       },
       {
+        "title": "转录音频",
+        "icon": "RiFlashlightFill",
+        "url": "/audio-transcribe",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
         "title": "查看示例",
         "icon": "RiDiscordFill",
         "url": "/#showcase",

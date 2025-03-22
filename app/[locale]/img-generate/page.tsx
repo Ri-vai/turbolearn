@@ -41,7 +41,7 @@ export default function Page() {
   const getDescription = () => {
     let description = `Generate a cross design with style: ${style}.`
     if (textEnabled === "yes" && text) {
-      description += ` Include the text "${text}" ${textPosition === "behind" ? "behind" : "inside"} the cross.`
+      description += ` Include the text "${text}" ${textPosition === "behind" ? "behind" : "inside"} the cross. `
     }
     if (customStyle) {
       description += ` Additional style details: ${customStyle}`

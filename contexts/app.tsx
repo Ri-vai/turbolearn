@@ -36,7 +36,7 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
     // 开发环境下自动设置测试用户
     if (process.env.NODE_ENV === 'development') {
       return {
-        uuid: "30c2108c-52e2-4882-88dd-ece0edf90a11", // 从数据库获取
+        uuid: "b4e297c6-4cc1-4be4-ac3f-2ce604b5905c", // 从数据库获取
         email: "1542056236@qq.com",
         nickname: "Ri-vai",
         avatar_url: "https://avatars.githubusercontent.com/u/65497038?v=4",

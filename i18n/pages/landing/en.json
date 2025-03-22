@@ -77,6 +77,13 @@
         "variant": "default"
       },
       {
+        "title": "Transcribe Audio",
+        "icon": "RiFlashlightFill",
+        "url": "/audio-transcribe",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
         "title": "View Examples",
         "icon": "RiDiscordFill",
         "url": "/#showcase",

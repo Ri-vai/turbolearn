@@ -146,6 +146,48 @@
         "error": "生成失败，请重试",
         "download_error": "下载失败"
       }
+    },
+    "audio-transcribe": {
+      "title": "AI 语音转文字",
+      "status": {
+        "recording": "正在录音",
+        "paused": "已暂停",
+        "transcribing": "正在转录..."
+      },
+      "form": {
+        "transcribe": "开始转录"
+      },
+      "preview": {
+        "loading": "正在转录音频...",
+        "empty": {
+          "title": "转录结果将在这里显示",
+          "description": "请在左侧录制音频并点击转录按钮"
+        }
+      },
+      "toast": {
+        "recording_started": "开始录音",
+        "recording_paused": "录音已暂停",
+        "recording_resumed": "录音已恢复",
+        "recording_stopped": "录音已停止",
+        "recording_failed": "录音失败",
+        "no_audio": "没有可用的音频",
+        "validation": "请先录制音频",
+        "success": "转录成功",
+        "error": "转录失败，请重试",
+        "download_error": "下载失败",
+        "file_upload_failed": "文件上传失败，请重试",
+        "copied": "已复制到剪贴板",
+        "copy_failed": "复制失败"
+      },
+      "error": {
+        "credits_not_enough": "积分不足，请充值",
+        "transcription_failed": "转录失败，请重试"
+      },
+      "detected_language": "检测到的语言",
+      "tabs": {
+        "full_text": "完整文本",
+        "timestamps": "时间戳"
+      }
     }
   },
   "error": {

@@ -150,6 +150,48 @@
         "credits_not_enough": "Insufficient credits, please recharge and try again",
         "generation_failed": "Generation failed, please try again"
       }
+    },
+    "audio-transcribe": {
+      "title": "AI Audio Transcription",
+      "status": {
+        "recording": "Recording",
+        "paused": "Paused",
+        "transcribing": "Transcribing..."
+      },
+      "form": {
+        "transcribe": "Transcribe"
+      },
+      "preview": {
+        "loading": "Transcribing audio...",
+        "empty": {
+          "title": "Transcription will appear here",
+          "description": "Record audio on the left and click the transcribe button"
+        }
+      },
+      "toast": {
+        "recording_started": "Recording started",
+        "recording_paused": "Recording paused",
+        "recording_resumed": "Recording resumed",
+        "recording_stopped": "Recording stopped",
+        "recording_failed": "Failed to start recording",
+        "no_audio": "No audio available",
+        "validation": "Please record audio first",
+        "success": "Transcription successful",
+        "error": "Transcription failed, please try again",
+        "download_error": "Download failed",
+        "file_upload_failed": "File upload failed, please try again",
+        "copied": "Copied to clipboard",
+        "copy_failed": "Failed to copy"
+      },
+      "error": {
+        "credits_not_enough": "Not enough credits, please recharge",
+        "transcription_failed": "Transcription failed, please try again"
+      },
+      "detected_language": "Detected language",
+      "tabs": {
+        "full_text": "Full Text",
+        "timestamps": "Timestamps"
+      }
     }
   }
 }

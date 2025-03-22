@@ -12,12 +12,14 @@ export enum CreditsTransType {
   SystemAdd = "system_add", // system add credits
   Ping = "ping", // cost for ping api
   ImageGen = "image_gen", // cost for image generation
+  AudioTranscribe = "audio_transcribe",
 }
 
 export enum CreditsAmount {
   NewUserGet = 5,
   PingCost = 1,
-  ImageGenCost = 1,
+  ImageGenCost = 2,
+  AudioTranscribeCost = 3,
 }
 
 export async function getUserCredits(user_uuid: string): Promise<UserCredits> {
@@ -32,6 +34,7 @@ export async function getUserCredits(user_uuid: string): Promise<UserCredits> {
     }
 
     const credits = await getUserValidCredits(user_uuid);
+    console.log("🚀 ~ getUserCredits ~ user_uuid:", user_uuid)
     console.log("🚀 ~ getUserCredits ~ credits:", credits)
     if (credits) {
       credits.forEach((v: Credit) => {
