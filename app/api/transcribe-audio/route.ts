@@ -65,7 +65,7 @@ export async function POST(req: Request) {
             // 使用上传后的URL
             audio_url: audioUrl,
             task: "transcribe",
-            language: null,
+            language: undefined,
             diarize: false,
             chunk_level: "segment",
             version: "3",
