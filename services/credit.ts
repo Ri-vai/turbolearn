@@ -13,6 +13,7 @@ export enum CreditsTransType {
   Ping = "ping", // cost for ping api
   ImageGen = "image_gen", // cost for image generation
   AudioTranscribe = "audio_transcribe",
+  NotesGeneration = "notes_generation",
 }
 
 export enum CreditsAmount {
@@ -20,6 +21,7 @@ export enum CreditsAmount {
   PingCost = 1,
   ImageGenCost = 2,
   AudioTranscribeCost = 3,
+  NotesGenerationCost = 2,
 }
 
 export async function getUserCredits(user_uuid: string): Promise<UserCredits> {
@@ -34,8 +36,6 @@ export async function getUserCredits(user_uuid: string): Promise<UserCredits> {
     }
 
     const credits = await getUserValidCredits(user_uuid);
-    console.log("🚀 ~ getUserCredits ~ user_uuid:", user_uuid)
-    console.log("🚀 ~ getUserCredits ~ credits:", credits)
     if (credits) {
       credits.forEach((v: Credit) => {
         user_credits.left_credits += v.credits;

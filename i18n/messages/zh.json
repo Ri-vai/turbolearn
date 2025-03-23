@@ -189,13 +189,29 @@
       "detected_language": "检测到的语言",
       "tabs": {
         "full_text": "完整文本",
-        "timestamps": "时间戳"
+        "timestamps": "时间戳",
+        "notes": "智能笔记"
       },
-      "uploaded_file": "已上传文件"
+      "generate_notes": "生成笔记",
+      "generating_notes": "正在生成笔记...",
+      "notes_generated": "笔记生成成功",
+      "notes_generation_failed": "笔记生成失败",
+      "download_notes": "下载笔记",
+      "download_transcription": "下载转录",
+      "notes_credits_not_enough": "积分不足，无法生成笔记",
+      "uploaded_file": "已上传文件",
+      "notes_generation_hint": "点击生成笔记按钮，AI将帮您整理内容为结构化笔记",
+      "tooltip": {
+        "download_transcription": "将转录文本下载为TXT文件",
+        "download_notes": "将生成的笔记下载为TXT文件",
+        "generate_notes": "使用AI分析转录内容并生成结构化笔记",
+        "copy_text": "复制文本到剪贴板"
+      }
     }
   },
   "error": {
     "credits_not_enough": "积分不足，请充值后再试",
     "generation_failed": "生成失败，请稍后重试"
-  }
+  },
+  "download_transcription": "下载转录"
 }

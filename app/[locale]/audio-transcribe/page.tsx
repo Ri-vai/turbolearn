@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { toast } from "sonner"
-import { Download, Home, Mic, Pause, Play, Square, Languages, Copy, Check, Upload } from "lucide-react"
+import { Download, Home, Mic, Pause, Play, Square, Languages, Copy, Check, Upload, FileText } from "lucide-react"
 import LocaleToggle from "@/components/locale/toggle"
 import SignToggle from "@/components/sign/toggle"
 import { Squares } from "@/components/ui/squares-background"
@@ -16,7 +16,8 @@ const STORAGE_KEYS = {
   TRANSCRIBED_TEXT: 'transcribed_text',
   TRANSCRIPTION_CHUNKS: 'transcription_chunks',
   INFERRED_LANGUAGES: 'inferred_languages',
-  AUDIO_BLOB: 'audio_blob'
+  AUDIO_BLOB: 'audio_blob',
+  GENERATED_NOTES: 'generated_notes'
 };
 
 export default function Page() {
@@ -33,6 +34,8 @@ export default function Page() {
   const [copiedId, setCopiedId] = useState<string | null>(null)
   const [selectedFile, setSelectedFile] = useState<File | null>(null)
   const [fileUploaded, setFileUploaded] = useState(false)
+  const [generatedNotes, setGeneratedNotes] = useState<string | null>(null)
+  const [generatingNotes, setGeneratingNotes] = useState(false)
   
   const mediaRecorderRef = useRef<MediaRecorder | null>(null)
   const audioChunksRef = useRef<Blob[]>([])
@@ -92,6 +95,12 @@ export default function Page() {
         console.error("Failed to restore audio blob", e);
       }
     }
+    
+    // 恢复生成的笔记
+    const savedNotes = localStorage.getItem(STORAGE_KEYS.GENERATED_NOTES);
+    if (savedNotes) {
+      setGeneratedNotes(savedNotes);
+    }
   }, []);
 
   useEffect(() => {
@@ -137,6 +146,14 @@ export default function Page() {
       }
     }
   }, [audioBlob]);
+
+  useEffect(() => {
+    if (generatedNotes) {
+      localStorage.setItem(STORAGE_KEYS.GENERATED_NOTES, generatedNotes);
+    } else {
+      localStorage.removeItem(STORAGE_KEYS.GENERATED_NOTES);
+    }
+  }, [generatedNotes]);
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60)
@@ -355,6 +372,70 @@ export default function Page() {
     }
   }
 
+  const handleGenerateNotes = async () => {
+    if (!transcribedText) {
+      toast.error(t("toast.no_audio"));
+      return;
+    }
+    
+    try {
+      setGeneratingNotes(true);
+      
+      const response = await fetch('/api/generate-notes', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ text: transcribedText }),
+      });
+      
+      const res = await response.json();
+      
+      if (res.message === 'credits_not_enough') {
+        toast.error(t("notes_credits_not_enough"), {
+          duration: 5000,
+          action: {
+            label: t('my_credits.recharge'),
+            onClick: () => window.open('/#pricing', '_blank')
+          }
+        });
+        return;
+      }
+      
+      if (!response.ok || !res.data || !res.data.notes) {
+        throw new Error(t("notes_generation_failed"));
+      }
+      
+      setGeneratedNotes(res.data.notes);
+      // 自动切换到笔记标签页
+      setActiveTab("notes");
+      toast.success(t("notes_generated"));
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : t("notes_generation_failed");
+      toast.error(errorMessage);
+    } finally {
+      setGeneratingNotes(false);
+    }
+  };
+  
+  const handleDownloadNotes = () => {
+    if (!generatedNotes) return;
+    
+    try {
+      const blob = new Blob([generatedNotes], { type: 'text/plain' });
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'notes.txt';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      toast.error(t("toast.download_error"));
+    }
+  };
+
   return (
     <div className="min-h-screen bg-transparent text-white relative overflow-hidden">
       <Squares 
@@ -499,54 +580,144 @@ export default function Page() {
             )}
             
             {transcribedText ? (
-              <div className="w-full h-full flex flex-col">
-                <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-                  <TabsList className="mb-4">
-                    <TabsTrigger value="text">{t("tabs.full_text")}</TabsTrigger>
-                    {transcriptionChunks.length > 0 && (
-                      <TabsTrigger value="chunks">{t("tabs.timestamps")}</TabsTrigger>
-                    )}
-                  </TabsList>
-                  
-                  <TabsContent value="text" className="h-[calc(100vh-210px)] overflow-auto">
-                    <div className="p-4 relative">
-                      <Button 
-                        variant="ghost" 
-                        size="icon"
-                        className="absolute top-2 right-2 bg-[#1C1C1C]/80 hover:bg-[#1C1C1C] text-white"
-                        onClick={() => copyToClipboard(transcribedText, 'full-text')}
-                      >
-                        {copiedId === 'full-text' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
-                      </Button>
-                      <p className="text-white whitespace-pre-wrap pr-10">{transcribedText}</p>
+              <div className="mt-4">
+                <div className="bg-[#1C1C1C] rounded-lg p-2 text-white">
+                  {inferredLanguages.length > 0 && (
+                    <div className="flex items-center mb-2 px-2 py-1 space-x-1">
+                      <Languages className="h-4 w-4 text-gray-400" />
+                      <span className="text-sm text-gray-400">{t("detected_language")}:</span>
+                      <span className="text-sm ml-1">{inferredLanguages.join(', ')}</span>
                     </div>
-                  </TabsContent>
+                  )}
                   
-                  {transcriptionChunks.length > 0 && (
-                    <TabsContent value="chunks" className="h-[calc(100vh-210px)] overflow-auto">
-                      <div className="space-y-2 p-4">
-                        {transcriptionChunks.map((chunk, index) => (
-                          <div key={index} className="border border-[#3A3A3A] rounded-md p-2 relative">
-                            <Button 
-                              variant="ghost" 
-                              size="icon"
-                              className="absolute top-2 right-2 bg-[#1C1C1C]/80 hover:bg-[#1C1C1C] text-white h-6 w-6"
-                              onClick={() => copyToClipboard(chunk.text, `chunk-${index}`)}
+                  <Tabs defaultValue="text" value={activeTab} onValueChange={setActiveTab}>
+                    <div className="flex justify-between items-center">
+                      <TabsList className="bg-[#2C2C2C]">
+                        <TabsTrigger value="text">{t("tabs.full_text")}</TabsTrigger>
+                        {transcriptionChunks.length > 0 && (
+                          <TabsTrigger value="chunks">{t("tabs.timestamps")}</TabsTrigger>
+                        )}
+                        {generatedNotes && (
+                          <TabsTrigger value="notes">{t("tabs.notes")}</TabsTrigger>
+                        )}
+                      </TabsList>
+                      
+                      <div className="flex space-x-2">
+                        {(activeTab === "text" || activeTab === "chunks") && (
+                          <>
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="text-xs"
+                              onClick={handleDownload}
+                              title={t("tooltip.download_transcription")}
                             >
-                              {copiedId === `chunk-${index}` ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
+                              <Download className="h-3 w-3 mr-1" />
+                              {t("download_transcription")}
                             </Button>
-                            {chunk.timestamp && (
-                              <div className="text-xs text-gray-400 mb-1">
-                                {formatTimestamp(chunk.timestamp[0])} - {formatTimestamp(chunk.timestamp[1])}
-                              </div>
+                            
+                            {activeTab === "text" && (
+                              <Button
+                                variant={generatingNotes ? "outline" : "default"}
+                                size="sm"
+                                className="text-xs"
+                                onClick={handleGenerateNotes}
+                                disabled={generatingNotes}
+                                title={t("tooltip.generate_notes")}
+                              >
+                                {generatingNotes ? (
+                                  <>
+                                    <div className="h-3 w-3 mr-1 animate-spin rounded-full border-2 border-white border-t-transparent"></div>
+                                    {t("generating_notes")}
+                                  </>
+                                ) : (
+                                  <>
+                                    <FileText className="h-3 w-3 mr-1" />
+                                    {t("generate_notes")}
+                                  </>
+                                )}
+                              </Button>
                             )}
-                            <p className="pr-8">{chunk.text}</p>
-                          </div>
-                        ))}
+                          </>
+                        )}
+                        
+                        {activeTab === "notes" && generatedNotes && (
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="text-xs"
+                            onClick={handleDownloadNotes}
+                            title={t("tooltip.download_notes")}
+                          >
+                            <Download className="h-3 w-3 mr-1" />
+                            {t("download_notes")}
+                          </Button>
+                        )}
+                      </div>
+                    </div>
+                    
+                    <TabsContent value="text" className="h-[calc(100vh-210px)] overflow-auto">
+                      <div className="p-4 relative">
+                        <Button 
+                          variant="ghost" 
+                          size="icon"
+                          className="absolute top-2 right-2 bg-[#1C1C1C]/80 hover:bg-[#1C1C1C] text-white"
+                          onClick={() => copyToClipboard(transcribedText, 'full-text')}
+                          title={t("tooltip.copy_text")}
+                        >
+                          {copiedId === 'full-text' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
+                        </Button>
+                        <p className="text-white whitespace-pre-wrap pr-10">{transcribedText}</p>
                       </div>
                     </TabsContent>
-                  )}
-                </Tabs>
+                    
+                    {transcriptionChunks.length > 0 && (
+                      <TabsContent value="chunks" className="h-[calc(100vh-210px)] overflow-auto">
+                        <div className="space-y-2 p-4">
+                          {transcriptionChunks.map((chunk, index) => (
+                            <div key={index} className="border border-[#3A3A3A] rounded-md p-2 relative">
+                              <Button 
+                                variant="ghost" 
+                                size="icon"
+                                className="absolute top-2 right-2 bg-[#1C1C1C]/80 hover:bg-[#1C1C1C] text-white h-6 w-6"
+                                onClick={() => copyToClipboard(chunk.text, `chunk-${index}`)}
+                                title={t("tooltip.copy_text")}
+                              >
+                                {copiedId === `chunk-${index}` ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
+                              </Button>
+                              {chunk.timestamp && (
+                                <div className="text-xs text-gray-400 mb-1">
+                                  {formatTimestamp(chunk.timestamp[0])} - {formatTimestamp(chunk.timestamp[1])}
+                                </div>
+                              )}
+                              <p className="pr-8">{chunk.text}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </TabsContent>
+                    )}
+                    
+                    {generatedNotes && (
+                      <TabsContent value="notes" className="h-[calc(100vh-210px)] overflow-auto">
+                        <div className="p-4 relative">
+                          <Button 
+                            variant="ghost" 
+                            size="icon"
+                            className="absolute top-2 right-2 bg-[#1C1C1C]/80 hover:bg-[#1C1C1C] text-white"
+                            onClick={() => copyToClipboard(generatedNotes, 'notes')}
+                            title={t("tooltip.copy_text")}
+                          >
+                            {copiedId === 'notes' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
+                          </Button>
+                          <div 
+                            className="text-white markdown-content pr-10"
+                            dangerouslySetInnerHTML={{ __html: parseMarkdown(generatedNotes) }}
+                          ></div>
+                        </div>
+                      </TabsContent>
+                    )}
+                  </Tabs>
+                </div>
               </div>
             ) : (
               <div className="w-full h-full flex items-center justify-center">
@@ -564,9 +735,44 @@ export default function Page() {
                 </div>
               </div>
             )}
+
+            {activeTab === "text" && transcribedText && !generatedNotes && !generatingNotes && (
+              <div className="mt-2 text-xs text-gray-400 text-center">
+                {t("notes_generation_hint")}
+              </div>
+            )}
           </div>
         </div>
       </div>
     </div>
   )
+}
+
+// 添加简单的Markdown解析函数
+function parseMarkdown(markdown: string): string {
+  // 这是一个简单的实现，真实项目中应该使用正规的markdown解析库
+  let html = markdown
+    // 标题
+    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+    // 粗体
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    // 斜体
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    // 代码
+    .replace(/`(.*?)`/g, '<code>$1</code>')
+    // 列表
+    .replace(/^\- (.*$)/gim, '<li>$1</li>')
+    .replace(/<\/li>\n<li>/g, '</li><li>')
+    .replace(/<\/li>\n/g, '</li></ul>\n')
+    .replace(/^\<li\>/gm, '<ul><li>')
+    // 段落
+    .replace(/^\s*(\n)?(.+)/gm, function (m) {
+      return /\<(\/)?(h1|h2|h3|h4|h5|h6|ul|ol|li|blockquote|pre|img)/.test(m) ? m : '<p>' + m + '</p>';
+    })
+    // 多余的段落标签
+    .replace(/<\/p><p>/g, '</p>\n<p>');
+
+  return html;
 } 

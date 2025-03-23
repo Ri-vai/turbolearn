@@ -193,9 +193,31 @@
       "detected_language": "Detected language",
       "tabs": {
         "full_text": "Full Text",
-        "timestamps": "Timestamps"
+        "timestamps": "Timestamps",
+        "notes": "Smart Notes"
       },
-      "uploaded_file": "Uploaded file"
+      "generate_notes": "Generate Notes",
+      "generating_notes": "Generating notes...",
+      "notes_generated": "Notes generated successfully",
+      "notes_generation_failed": "Failed to generate notes",
+      "download_notes": "Download Notes",
+      "download_transcription": "Download Transcription",
+      "notes_credits_not_enough": "Not enough credits to generate notes",
+      "uploaded_file": "Uploaded file",
+      "notes_generation_hint": "Click the Generate Notes button to have AI organize content into structured notes",
+      "tooltip": {
+        "download_transcription": "Download transcription as TXT file",
+        "download_notes": "Download generated notes as TXT file",
+        "generate_notes": "Use AI to analyze transcription and generate structured notes",
+        "copy_text": "Copy text to clipboard"
+      }
     }
+  },
+  "download_transcription": "Download Transcription",
+  "tooltip": {
+    "download_transcription": "Download transcription as TXT file",
+    "download_notes": "Download generated notes as TXT file",
+    "generate_notes": "Use AI to analyze transcription and generate structured notes",
+    "copy_text": "Copy text to clipboard"
   }
 }
