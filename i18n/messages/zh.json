@@ -190,12 +190,12 @@
       "tabs": {
         "full_text": "完整文本",
         "timestamps": "时间戳"
-      }
+      },
+      "uploaded_file": "已上传文件"
     }
   },
   "error": {
     "credits_not_enough": "积分不足，请充值后再试",
     "generation_failed": "生成失败，请稍后重试"
-  },
-  "uploaded_file": "已上传文件"
+  }
 }

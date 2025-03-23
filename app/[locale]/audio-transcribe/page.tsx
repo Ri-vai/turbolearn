@@ -411,7 +411,10 @@ export default function Page() {
                         <Button 
                           size="lg"
                           className="bg-[#3A3A3A] hover:bg-[#4A4A4A] text-white rounded-full h-16 w-16 flex items-center justify-center"
-                          onClick={(e) => e.currentTarget.previousElementSibling?.click()}
+                          onClick={(e) => {
+                            const inputElement = e.currentTarget.previousElementSibling as HTMLInputElement;
+                            if (inputElement) inputElement.click();
+                          }}
                           type="button"
                         >
                           <Upload className="h-8 w-8" />
