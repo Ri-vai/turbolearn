@@ -70,13 +70,6 @@
     "tip": "🎁 Launch Special: 50% off for early creators",
     "buttons": [
       {
-        "title": "Generate Notes",
-        "icon": "RiFlashlightFill",
-        "url": "/img-generate",
-        "target": "_self",
-        "variant": "default"
-      },
-      {
         "title": "Transcribe Audio",
         "icon": "RiFlashlightFill",
         "url": "/audio-transcribe",

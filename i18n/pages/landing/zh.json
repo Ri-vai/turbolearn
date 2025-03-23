@@ -68,13 +68,6 @@
     "tip": "🎁 发布特惠：早鸟用户五折优惠",
     "buttons": [
       {
-        "title": "生成笔记",
-        "icon": "RiFlashlightFill",
-        "url": "/img-generate",
-        "target": "_self",
-        "variant": "default"
-      },
-      {
         "title": "转录音频",
         "icon": "RiFlashlightFill",
         "url": "/audio-transcribe",
