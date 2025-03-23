@@ -42,7 +42,9 @@ export async function POST(req: Request) {
     // 2. 检查用户积分
     const userCredits = await getUserCredits(user_uuid);
     if (!userCredits || userCredits.left_credits < CreditsAmount.AudioTranscribeCost) {
-      return respErr("credits_not_enough");
+      
+        console.log(`🚀 ~ POST ~ "credits_not_enough":`, "credits_not_enough")
+        return respErr("credits_not_enough");
     }
 
     // 3. 获取音频文件

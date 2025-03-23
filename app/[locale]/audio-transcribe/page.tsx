@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { toast } from "sonner"
-import { Download, Home, Mic, Pause, Play, Square, Languages, Copy, Check } from "lucide-react"
+import { Download, Home, Mic, Pause, Play, Square, Languages, Copy, Check, Upload } from "lucide-react"
 import LocaleToggle from "@/components/locale/toggle"
 import SignToggle from "@/components/sign/toggle"
 import { Squares } from "@/components/ui/squares-background"
@@ -31,6 +31,8 @@ export default function Page() {
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null)
   const [activeTab, setActiveTab] = useState("text")
   const [copiedId, setCopiedId] = useState<string | null>(null)
+  const [selectedFile, setSelectedFile] = useState<File | null>(null)
+  const [fileUploaded, setFileUploaded] = useState(false)
   
   const mediaRecorderRef = useRef<MediaRecorder | null>(null)
   const audioChunksRef = useRef<Blob[]>([])
@@ -271,13 +273,10 @@ export default function Page() {
       })
 
       const res = await response.json()
-      if (!response.ok) {
-        if (res.error === 'credits_not_enough') {
-          throw new Error(t('error.credits_not_enough'))
-        } else if (res.error === 'file_upload_failed') {
-          throw new Error(t('toast.file_upload_failed'))
-        }
-        throw new Error(t('error.transcription_failed'))
+      if (res.message == 'credits_not_enough') {
+        throw new Error(t('error.credits_not_enough'))
+      } else if (res.message == 'file_upload_failed') {
+        throw new Error(t('toast.file_upload_failed'))
       }
       
       setTranscribedText(res.data.text)
@@ -325,6 +324,37 @@ export default function Page() {
     }
   }
 
+  const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const file = event.target.files?.[0]
+    if (file) {
+      if (!file.type.startsWith('audio/')) {
+        toast.error(t("toast.invalid_file_type"))
+        return
+      }
+      
+      // 将文件转换为Blob
+      const reader = new FileReader()
+      reader.readAsArrayBuffer(file)
+      reader.onload = () => {
+        const arrayBuffer = reader.result as ArrayBuffer
+        const blob = new Blob([arrayBuffer], { type: file.type })
+        setAudioBlob(blob)
+        setSelectedFile(file)
+        setFileUploaded(true)
+        
+        // 清除任何现有的转录结果
+        setTranscribedText(null)
+        setTransriptionChunks([])
+        setInferredLanguages([])
+        
+        toast.success(t("toast.file_uploaded"))
+      }
+      reader.onerror = () => {
+        toast.error(t("toast.file_upload_error"))
+      }
+    }
+  }
+
   return (
     <div className="min-h-screen bg-transparent text-white relative overflow-hidden">
       <Squares 
@@ -361,13 +391,33 @@ export default function Page() {
                 
                 <div className="flex gap-4 mb-6">
                   {!isRecording ? (
-                    <Button 
-                      onClick={startRecording}
-                      size="lg"
-                      className="bg-[#3A3A3A] hover:bg-[#4A4A4A] text-white rounded-full h-16 w-16 flex items-center justify-center"
-                    >
-                      <Mic className="h-8 w-8" />
-                    </Button>
+                    <>
+                      <Button 
+                        onClick={startRecording}
+                        size="lg"
+                        className="bg-[#3A3A3A] hover:bg-[#4A4A4A] text-white rounded-full h-16 w-16 flex items-center justify-center"
+                      >
+                        <Mic className="h-8 w-8" />
+                      </Button>
+                      
+                      <label className="cursor-pointer">
+                        <input
+                          type="file"
+                          accept="audio/*"
+                          className="hidden"
+                          onChange={handleFileUpload}
+                          disabled={isRecording}
+                        />
+                        <Button 
+                          size="lg"
+                          className="bg-[#3A3A3A] hover:bg-[#4A4A4A] text-white rounded-full h-16 w-16 flex items-center justify-center"
+                          onClick={(e) => e.currentTarget.previousElementSibling?.click()}
+                          type="button"
+                        >
+                          <Upload className="h-8 w-8" />
+                        </Button>
+                      </label>
+                    </>
                   ) : (
                     <>
                       <Button 
@@ -403,6 +453,11 @@ export default function Page() {
                 
                 {audioBlob && !isRecording && (
                   <div className="mt-4 w-full">
+                    {fileUploaded && selectedFile && (
+                      <div className="text-sm mb-2 text-center">
+                        <span>{t("uploaded_file")}: {selectedFile.name}</span>
+                      </div>
+                    )}
                     <audio controls src={URL.createObjectURL(audioBlob)} className="w-full" />
                   </div>
                 )}

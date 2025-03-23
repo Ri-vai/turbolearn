@@ -61,11 +61,8 @@ export default function Page() {
       })
 
       const res = await response.json()
-      if (!response.ok) {
-        if (res.error === 'credits_not_enough') {
-          throw new Error(t('error.credits_not_enough'))
-        }
-        throw new Error(t('error.generation_failed'))
+      if (res.message == 'credits_not_enough') {
+        throw new Error(t('error.credits_not_enough'))
       }
       console.log('🚀res',res)
       return res.data.img_url

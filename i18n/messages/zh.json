@@ -177,7 +177,10 @@
         "download_error": "下载失败",
         "file_upload_failed": "文件上传失败，请重试",
         "copied": "已复制到剪贴板",
-        "copy_failed": "复制失败"
+        "copy_failed": "复制失败",
+        "file_uploaded": "文件上传成功",
+        "file_upload_error": "文件上传失败",
+        "invalid_file_type": "请上传音频文件"
       },
       "error": {
         "credits_not_enough": "积分不足，请充值",
@@ -193,5 +196,6 @@
   "error": {
     "credits_not_enough": "积分不足，请充值后再试",
     "generation_failed": "生成失败，请稍后重试"
-  }
+  },
+  "uploaded_file": "已上传文件"
 }

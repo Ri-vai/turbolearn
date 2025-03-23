@@ -181,7 +181,10 @@
         "download_error": "Download failed",
         "file_upload_failed": "File upload failed, please try again",
         "copied": "Copied to clipboard",
-        "copy_failed": "Failed to copy"
+        "copy_failed": "Failed to copy",
+        "file_uploaded": "File uploaded successfully",
+        "file_upload_error": "Failed to upload file",
+        "invalid_file_type": "Please upload an audio file"
       },
       "error": {
         "credits_not_enough": "Not enough credits, please recharge",
@@ -191,7 +194,8 @@
       "tabs": {
         "full_text": "Full Text",
         "timestamps": "Timestamps"
-      }
+      },
+      "uploaded_file": "Uploaded file"
     }
   }
 }
