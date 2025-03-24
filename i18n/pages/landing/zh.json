@@ -46,7 +46,7 @@
     "buttons": [
       {
         "title": "开始学习",
-        "url": "https://turbo-learn.com",
+        "url": "https://turbo-learn.com/audio-transcribe",
         "target": "_blank",
         "variant": "link",
         "icon": "RiArrowRightUpLine"
@@ -260,33 +260,24 @@
       }
     ]
   },
-  "showcase": {
+ "showcase": {
     "name": "showcase",
-    "title": "学习作品展示",
-    "description": "探索使用 TurboLearn 创建的笔记和图表示例。",
+    "title": "学习展示",
+    "description": "探索使用 TurboLearn 创建的示例笔记和图表。",
     "items": [
       {
-        "title": "生物学笔记",
+        "title": "生物笔记",
         "description": "细胞结构与功能",
-        "url": "https://turbo-learn.com/gallery/biology",
+        "url": "https://turbo-learn.com/audio-transcribe",
         "target": "_blank",
         "image": {
-          "src": "/imgs/showcases/7.png"
+          "src": "/imgs/showcases/2.png"
         }
       },
       {
-        "title": "物理学图表",
-        "description": "力与运动概念",
-        "url": "https://turbo-learn.com/gallery/physics",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/5.png"
-        }
-      },
-      {
-        "title": "历史时间线",
-        "description": "二战事件",
-        "url": "https://turbo-learn.com/gallery/history",
+        "title": "历史时间轴",
+        "description": "世界大战事件",
+        "url": "https://turbo-learn.com/audio-transcribe",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/1.png"
@@ -294,29 +285,11 @@
       },
       {
         "title": "数学公式",
-        "description": "微积分要点",
-        "url": "https://turbo-learn.com/gallery/math",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/2.png"
-        }
-      },
-      {
-        "title": "计算机科学",
-        "description": "算法流程图",
-        "url": "https://turbo-learn.com/gallery/cs",
+        "description": "微积分基础",
+        "url": "https://turbo-learn.com/audio-transcribe",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/3.png"
-        }
-      },
-      {
-        "title": "化学笔记",
-        "description": "有机反应",
-        "url": "https://turbo-learn.com/gallery/chemistry",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/9.png"
         }
       }
     ]

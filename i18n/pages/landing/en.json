@@ -48,7 +48,7 @@
     "buttons": [
       {
         "title": "Start Learning",
-        "url": "https://turbo-learn.com",
+        "url": "https://turbo-learn.com/audio-transcribe",
         "target": "_blank",
         "variant": "link",
         "icon": "RiArrowRightUpLine"
@@ -270,25 +270,16 @@
       {
         "title": "Biology Notes",
         "description": "Cell Structure & Function",
-        "url": "https://turbo-learn.com/gallery/biology",
+        "url": "https://turbo-learn.com/audio-transcribe",
         "target": "_blank",
         "image": {
-          "src": "/imgs/showcases/7.png"
-        }
-      },
-      {
-        "title": "Physics Diagrams",
-        "description": "Force & Motion Concepts",
-        "url": "https://turbo-learn.com/gallery/physics",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/5.png"
+          "src": "/imgs/showcases/2.png"
         }
       },
       {
         "title": "History Timeline",
         "description": "World War II Events",
-        "url": "https://turbo-learn.com/gallery/history",
+        "url": "https://turbo-learn.com/audio-transcribe",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/1.png"
@@ -297,28 +288,10 @@
       {
         "title": "Math Formulas",
         "description": "Calculus Essentials",
-        "url": "https://turbo-learn.com/gallery/math",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/2.png"
-        }
-      },
-      {
-        "title": "Computer Science",
-        "description": "Algorithm Flowcharts",
-        "url": "https://turbo-learn.com/gallery/cs",
+        "url": "https://turbo-learn.com/audio-transcribe",
         "target": "_blank",
         "image": {
           "src": "/imgs/showcases/3.png"
-        }
-      },
-      {
-        "title": "Chemistry Notes",
-        "description": "Organic Reactions",
-        "url": "https://turbo-learn.com/gallery/chemistry",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/9.png"
         }
       }
     ]
