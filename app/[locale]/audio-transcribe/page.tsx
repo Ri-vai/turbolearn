@@ -464,8 +464,8 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="flex px-8 pb-8 gap-8 h-[calc(100vh-80px)]">
-          <div className="w-[380px] space-y-6">
+        <div className="flex flex-col lg:flex-row px-4 lg:px-8 pb-8 gap-4 lg:gap-8 h-auto">
+          <div className="w-full lg:w-[380px] space-y-6">
             <div className="space-y-4">
               <div className="flex flex-col items-center justify-center p-8 border border-[#3A3A3A] rounded-lg bg-[#1C1C1C]/30">
                 <div className="text-4xl font-mono mb-6">{formatTime(recordingTime)}</div>
@@ -565,20 +565,7 @@ export default function Page() {
             </Button>
           </div>
 
-          <div className="flex-1 rounded-lg bg-transparent border border-[#3A3A3A] p-4 flex flex-col relative">
-            {transcribedText && (
-              <div className="absolute top-4 right-4 flex gap-2">
-                <Button 
-                  variant="ghost" 
-                  size="icon"
-                  className="bg-[#1C1C1C]/80 hover:bg-[#1C1C1C] text-white"
-                  onClick={handleDownload}
-                >
-                  <Download className="h-5 w-5" />
-                </Button>
-              </div>
-            )}
-            
+          <div className="flex-1 rounded-lg bg-transparent border border-[#3A3A3A] p-4 flex flex-col relative h-auto">
             {transcribedText ? (
               <div className="mt-4">
                 <div className="bg-[#1C1C1C] rounded-lg p-2 text-white">
@@ -656,7 +643,7 @@ export default function Page() {
                       </div>
                     </div>
                     
-                    <TabsContent value="text" className="h-[calc(100vh-210px)] overflow-auto">
+                    <TabsContent value="text" className="max-h-[60vh] lg:max-h-[calc(100vh-210px)] overflow-auto">
                       <div className="p-4 relative">
                         <Button 
                           variant="ghost" 
@@ -667,12 +654,16 @@ export default function Page() {
                         >
                           {copiedId === 'full-text' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
                         </Button>
-                        <p className="text-white whitespace-pre-wrap pr-10">{transcribedText}</p>
+                        <textarea
+                          className="w-full bg-transparent text-white whitespace-pre-wrap pr-10 resize-none min-h-[500px] focus:outline-none focus:ring-1 focus:ring-[#3A3A3A] rounded-md p-2"
+                          value={transcribedText || ''}
+                          onChange={(e) => setTranscribedText(e.target.value)}
+                        />
                       </div>
                     </TabsContent>
                     
                     {transcriptionChunks.length > 0 && (
-                      <TabsContent value="chunks" className="h-[calc(100vh-210px)] overflow-auto">
+                      <TabsContent value="chunks" className="max-h-[60vh] lg:max-h-[calc(100vh-210px)] overflow-auto">
                         <div className="space-y-2 p-4">
                           {transcriptionChunks.map((chunk, index) => (
                             <div key={index} className="border border-[#3A3A3A] rounded-md p-2 relative">
@@ -690,7 +681,15 @@ export default function Page() {
                                   {formatTimestamp(chunk.timestamp[0])} - {formatTimestamp(chunk.timestamp[1])}
                                 </div>
                               )}
-                              <p className="pr-8">{chunk.text}</p>
+                              <textarea
+                                className="w-full bg-transparent text-white pr-8 resize-none min-h-[40px] focus:outline-none"
+                                value={chunk.text}
+                                onChange={(e) => {
+                                  const newChunks = [...transcriptionChunks];
+                                  newChunks[index].text = e.target.value;
+                                  setTransriptionChunks(newChunks);
+                                }}
+                              />
                             </div>
                           ))}
                         </div>
@@ -698,7 +697,7 @@ export default function Page() {
                     )}
                     
                     {generatedNotes && (
-                      <TabsContent value="notes" className="h-[calc(100vh-210px)] overflow-auto">
+                      <TabsContent value="notes" className="max-h-[60vh] lg:max-h-[calc(100vh-210px)] overflow-auto">
                         <div className="p-4 relative">
                           <Button 
                             variant="ghost" 
@@ -709,10 +708,11 @@ export default function Page() {
                           >
                             {copiedId === 'notes' ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
                           </Button>
-                          <div 
-                            className="text-white markdown-content pr-10"
-                            dangerouslySetInnerHTML={{ __html: parseMarkdown(generatedNotes) }}
-                          ></div>
+                          <textarea
+                            className="w-full bg-transparent text-white whitespace-pre-wrap pr-10 resize-none min-h-[500px] focus:outline-none focus:ring-1 focus:ring-[#3A3A3A] rounded-md p-2"
+                            value={generatedNotes || ''}
+                            onChange={(e) => setGeneratedNotes(e.target.value)}
+                          />
                         </div>
                       </TabsContent>
                     )}
