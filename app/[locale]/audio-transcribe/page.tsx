@@ -746,33 +746,4 @@ export default function Page() {
       </div>
     </div>
   )
-}
-
-// 添加简单的Markdown解析函数
-function parseMarkdown(markdown: string): string {
-  // 这是一个简单的实现，真实项目中应该使用正规的markdown解析库
-  let html = markdown
-    // 标题
-    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-    // 粗体
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    // 斜体
-    .replace(/\*(.*?)\*/g, '<em>$1</em>')
-    // 代码
-    .replace(/`(.*?)`/g, '<code>$1</code>')
-    // 列表
-    .replace(/^\- (.*$)/gim, '<li>$1</li>')
-    .replace(/<\/li>\n<li>/g, '</li><li>')
-    .replace(/<\/li>\n/g, '</li></ul>\n')
-    .replace(/^\<li\>/gm, '<ul><li>')
-    // 段落
-    .replace(/^\s*(\n)?(.+)/gm, function (m) {
-      return /\<(\/)?(h1|h2|h3|h4|h5|h6|ul|ol|li|blockquote|pre|img)/.test(m) ? m : '<p>' + m + '</p>';
-    })
-    // 多余的段落标签
-    .replace(/<\/p><p>/g, '</p>\n<p>');
-
-  return html;
 } 

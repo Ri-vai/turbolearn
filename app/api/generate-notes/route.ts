@@ -64,11 +64,19 @@ export async function POST(req: Request) {
       const res = await retryWithDelay(() => 
         fal.subscribe("fal-ai/any-llm", {
           input: {
-            prompt: `You are an expert in organizing information and creating structured notes. 
-            Please analyze the following text, which is a transcription of an audio recording, and convert it into well-structured, organized markdown notes.
-            Identify key topics, main points, and organize them with appropriate headings and bullet points.
-            Make the notes concise yet comprehensive, focusing on clarity and logical flow.
-            Create a structure that makes it easy to review and understand the content.
+            prompt: `You are an information organization expert.
+            Please analyze the following text (from an audio transcription) and convert it into structured notes.
+            Do not use Markdown format. Instead, use numbered hierarchy to indicate structure, for example:
+            
+            1. Main topic one
+                1.1 Subtopic
+                1.2 Subtopic
+                   1.2.1 More detailed point
+            2. Main topic two
+                2.1 Subtopic
+            
+            Identify key topics and main points, keeping the notes concise and clear, with emphasis on logical flow.
+            Content should be comprehensive yet concise, making it easy to review and understand.
             
             Here is the transcription:
             
